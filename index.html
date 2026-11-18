@@ -1,0 +1,2065 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>没落贵族琉璃川椿 - 官方视频门户 - 以影像记录旧宅与新生</title>
+<meta name="description" content="没落贵族琉璃川椿官方网站，以高清原创影像记录老宅、家族记忆与社区新生，汇聚创作者内容生态与品牌故事。">
+<style>
+:root{
+  --ink:#1b1a17;
+  --ink-2:#3a3730;
+  --paper:#f4efe6;
+  --paper-2:#e9e1d2;
+  --gold:#b58a3c;
+  --gold-2:#d9b26a;
+  --rust:#8c4a2f;
+  --jade:#4a6b5a;
+  --line:rgba(27,26,23,.16);
+  --shadow:0 18px 40px rgba(27,26,23,.14);
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:132px}
+body{
+  font-family:"Songti SC","Noto Serif SC",Georgia,"Times New Roman",serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* ============ 公告条 ============ */
+.announce{
+  background:linear-gradient(90deg,#241f18,#3c3225 55%,#241f18);
+  color:#f0e6d2;
+  font-size:13.5px;
+  letter-spacing:.02em;
+  position:sticky;top:0;z-index:60;
+  border-bottom:1px solid rgba(217,178,106,.28);
+}
+.announce .wrap{display:flex;align-items:center;gap:14px;height:40px;overflow:hidden}
+.announce .dot{width:7px;height:7px;border-radius:50%;background:var(--gold-2);flex:none;box-shadow:0 0 0 4px rgba(217,178,106,.18)}
+.announce-track{display:flex;gap:38px;white-space:nowrap;animation:slide 26s linear infinite}
+.announce:hover .announce-track{animation-play-state:paused}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.announce b{color:var(--gold-2);font-weight:600}
+
+/* ============ 页头 ============ */
+.site-head{
+  position:sticky;top:40px;z-index:55;
+  background:rgba(244,239,230,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head-inner{display:flex;align-items:center;gap:22px;height:72px}
+.logo{display:flex;align-items:center;gap:11px;flex:none}
+.logo-mark{
+  width:42px;height:42px;border-radius:50%;
+  border:1.5px solid var(--gold);
+  display:grid;place-items:center;
+  position:relative;
+  background:radial-gradient(circle at 32% 28%,#fff8e8,#e8dcc4);
+}
+.logo-mark::after{
+  content:"";width:14px;height:14px;border:1.5px solid var(--rust);transform:rotate(45deg);
+}
+.logo-txt{display:flex;flex-direction:column;line-height:1.25}
+.logo-txt strong{font-size:16.5px;letter-spacing:.08em}
+.logo-txt span{font-size:10.5px;letter-spacing:.34em;color:var(--gold);font-family:Georgia,serif}
+nav.main-nav{display:flex;gap:4px;margin-left:auto}
+nav.main-nav a{
+  font-size:14px;padding:8px 13px;border-radius:8px;color:var(--ink-2);
+  transition:.25s;position:relative;white-space:nowrap;
+}
+nav.main-nav a:hover{background:rgba(181,138,60,.12);color:var(--ink)}
+.head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search-box{
+  display:flex;align-items:center;gap:8px;
+  border:1px solid var(--line);border-radius:999px;
+  padding:6px 8px 6px 14px;background:#fbf7ef;
+  transition:.25s;
+}
+.search-box:focus-within{border-color:var(--gold);box-shadow:0 0 0 3px rgba(181,138,60,.14)}
+.search-box input{
+  border:none;background:transparent;outline:none;
+  font-family:inherit;font-size:13.5px;width:132px;color:var(--ink);
+}
+.search-box input::placeholder{color:#9a948a}
+.search-box button{
+  width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--paper);
+  display:grid;place-items:center;flex:none;font-size:13px;
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:10px 20px;border-radius:999px;font-size:14px;letter-spacing:.03em;
+  transition:.28s;border:1px solid transparent;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold),#9c7028);color:#fff8e8;box-shadow:0 8px 20px rgba(140,74,47,.24)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(140,74,47,.32)}
+.btn-ghost{border-color:var(--line);color:var(--ink-2)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--rust)}
+.menu-toggle{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);font-size:18px}
+
+/* 搜索反馈 */
+.search-feedback{
+  position:fixed;left:50%;transform:translate(-50%,-12px);
+  top:128px;z-index:90;background:var(--ink);color:var(--paper);
+  padding:9px 20px;border-radius:999px;font-size:13.5px;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:var(--shadow);max-width:88vw;text-align:center;
+}
+.search-feedback.show{opacity:1;transform:translate(-50%,0)}
+
+/* ============ 首屏 ============ */
+.hero{position:relative;padding:64px 0 76px;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(700px 420px at 82% 12%,rgba(181,138,60,.18),transparent 70%),
+    radial-gradient(520px 380px at 8% 82%,rgba(74,107,90,.13),transparent 72%);
+  pointer-events:none;
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;position:relative}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:12px;letter-spacing:.28em;color:var(--rust);
+  border:1px solid rgba(140,74,47,.32);border-radius:999px;padding:6px 15px;
+  background:rgba(255,248,232,.6);margin-bottom:22px;
+}
+.eyebrow::before{content:"";width:5px;height:5px;background:var(--gold);transform:rotate(45deg)}
+h1{
+  font-size:clamp(34px,4.6vw,58px);
+  line-height:1.2;letter-spacing:.03em;font-weight:700;
+  margin-bottom:20px;
+}
+h1 em{font-style:normal;color:var(--rust);position:relative}
+h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:4px;height:9px;
+  background:linear-gradient(90deg,rgba(217,178,106,.55),transparent);z-index:-1;
+}
+.hero-lead{font-size:16px;color:var(--ink-2);max-width:560px;margin-bottom:14px}
+.hero-desc{font-size:14.6px;color:#5d574d;max-width:580px;margin-bottom:30px;text-align:justify}
+.hero-actions{display:flex;flex-wrap:wrap;gap:13px;margin-bottom:38px}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;border-top:1px solid var(--line);padding-top:24px;max-width:560px}
+.stat b{display:block;font-size:29px;letter-spacing:.02em;color:var(--rust);font-weight:700;line-height:1.2}
+.stat span{font-size:12.5px;color:#7a7365;letter-spacing:.06em}
+
+/* 主视觉 */
+.hero-visual{position:relative}
+.main-cover{
+  border-radius:20px;overflow:hidden;box-shadow:var(--shadow);
+  border:1px solid rgba(181,138,60,.3);position:relative;background:#241f18;
+}
+.main-cover svg{width:100%;height:auto}
+.cover-badge{
+  position:absolute;top:16px;left:16px;display:flex;gap:8px;z-index:3;
+}
+.pill{
+  font-size:11.5px;letter-spacing:.1em;padding:5px 12px;border-radius:999px;
+  background:rgba(20,18,15,.62);color:#f6ecd8;border:1px solid rgba(217,178,106,.4);backdrop-filter:blur(4px);
+}
+.pill.gold{background:linear-gradient(135deg,var(--gold),#92691f);color:#fff8e8;border-color:transparent}
+.cover-play{
+  position:absolute;inset:0;display:grid;place-items:center;z-index:2;
+}
+.cover-play span{
+  width:72px;height:72px;border-radius:50%;
+  background:rgba(250,244,232,.16);border:1.5px solid rgba(250,244,232,.75);
+  display:grid;place-items:center;backdrop-filter:blur(3px);
+  transition:.3s;
+}
+.cover-play span::after{
+  content:"";width:0;height:0;border-left:20px solid #faf4e8;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px;
+}
+.main-cover:hover .cover-play span{transform:scale(1.08);background:rgba(181,138,60,.4)}
+.cover-caption{
+  position:absolute;left:0;right:0;bottom:0;padding:22px 20px 18px;
+  background:linear-gradient(to top,rgba(12,10,8,.86),transparent);
+  color:#f4ecdd;z-index:3;
+}
+.cover-caption h2{font-size:19px;letter-spacing:.04em;margin-bottom:5px;border:none;padding:0}
+.cover-caption p{font-size:12.8px;color:#c9bfa9;letter-spacing:.04em}
+.float-note{
+  position:absolute;right:-14px;bottom:-22px;
+  background:#fdf9f0;border:1px solid var(--line);border-radius:12px;
+  padding:12px 16px;box-shadow:var(--shadow);font-size:12.5px;color:var(--ink-2);
+  display:flex;align-items:center;gap:9px;max-width:230px;
+}
+.float-note i{width:8px;height:8px;background:var(--jade);border-radius:50%;flex:none;box-shadow:0 0 0 4px rgba(74,107,90,.16)}
+
+/* ============ 通用 section ============ */
+section{padding:74px 0}
+.sec-head{margin-bottom:38px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.sec-head .t{max-width:660px}
+.sec-kicker{font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:10px;display:block;font-family:Georgia,serif}
+h2{font-size:clamp(24px,2.8vw,34px);letter-spacing:.04em;line-height:1.3;font-weight:700}
+.sec-head p{font-size:14.4px;color:#6b6457;margin-top:10px}
+.sec-link{font-size:13.5px;color:var(--rust);border-bottom:1px solid rgba(140,74,47,.4);padding-bottom:2px;white-space:nowrap;transition:.25s}
+.sec-link:hover{color:var(--gold);border-color:var(--gold)}
+
+/* ============ 焦点视频 ============ */
+.focus{background:linear-gradient(180deg,#f8f3e9,#f1ebdf);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.focus-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:24px}
+.big-card{
+  position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);
+  border:1px solid rgba(181,138,60,.26);background:#1e1b16;
+}
+.big-card svg{width:100%;height:auto;transition:.6s}
+.big-card:hover svg{transform:scale(1.03)}
+.big-card .meta{
+  position:absolute;inset:auto 0 0 0;padding:26px 24px 22px;
+  background:linear-gradient(to top,rgba(12,10,8,.9),rgba(12,10,8,.05));
+  color:#f6eddb;
+}
+.big-card .meta h3{font-size:21px;margin-bottom:8px;letter-spacing:.03em}
+.big-card .meta p{font-size:13.2px;color:#c6bca7;margin-bottom:14px;max-width:520px}
+.card-foot{display:flex;align-items:center;gap:12px;font-size:12.3px;color:#b6ab95;flex-wrap:wrap}
+.card-foot .tagline{color:var(--gold-2)}
+.mini-list{display:grid;gap:16px;grid-template-rows:repeat(2,1fr)}
+.mini{
+  display:grid;grid-template-columns:150px 1fr;gap:16px;
+  background:#fdf9f1;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  transition:.3s;
+}
+.mini:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:rgba(181,138,60,.45)}
+.mini-thumb{position:relative;background:#2a251d;overflow:hidden}
+.mini-thumb svg{width:100%;height:100%;object-fit:cover}
+.mini-body{padding:14px 16px 14px 0;display:flex;flex-direction:column;justify-content:center}
+.mini-body h3{font-size:15.5px;line-height:1.45;margin-bottom:6px}
+.mini-body p{font-size:12.6px;color:#7c7566;margin-bottom:9px}
+.mini-body .card-foot{font-size:11.6px}
+
+/* ============ 视频流 ============ */
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.v-card{
+  background:#fdfaf3;border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.32s;
+}
+.v-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(181,138,60,.45)}
+.v-cover{position:relative;background:#241f18;aspect-ratio:16/9;overflow:hidden}
+.v-cover svg{width:100%;height:100%;transition:.5s}
+.v-card:hover .v-cover svg{transform:scale(1.04)}
+.v-badge{
+  position:absolute;top:11px;left:11px;font-size:11px;letter-spacing:.08em;
+  padding:4px 10px;border-radius:999px;background:rgba(20,18,15,.6);color:#f5ecd9;border:1px solid rgba(217,178,106,.35);z-index:2;
+}
+.v-play{
+  position:absolute;right:11px;bottom:11px;width:38px;height:38px;border-radius:50%;
+  background:rgba(250,244,232,.18);border:1px solid rgba(250,244,232,.7);display:grid;place-items:center;z-index:2;backdrop-filter:blur(3px);
+}
+.v-play::after{content:"";border-left:11px solid #faf4e8;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
+.v-body{padding:17px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
+.v-body h3{font-size:16.2px;line-height:1.5;letter-spacing:.02em}
+.v-body .abs{font-size:13px;color:#736c5e;flex:1}
+.v-tags{display:flex;gap:7px;flex-wrap:wrap}
+.tag{font-size:11.3px;padding:3px 9px;border-radius:999px;background:rgba(181,138,60,.13);color:#8a6524;letter-spacing:.04em}
+.v-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px dashed var(--line);padding-top:11px;margin-top:3px}
+.author{display:flex;align-items:center;gap:8px;font-size:12.4px;color:#5f594c}
+.avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  font-size:11.5px;color:#fff8e8;font-family:Georgia,serif;flex:none;letter-spacing:0;
+}
+.act{display:flex;gap:12px;font-size:12.3px;color:#8a8272}
+.act button{display:flex;align-items:center;gap:5px;transition:.22s;font-size:12.3px;color:inherit}
+.act button:hover{color:var(--rust)}
+.act .on{color:var(--rust)}
+
+/* ============ 专题 ============ */
+.special{background:linear-gradient(180deg,#efe8da,#f4efe6);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.special-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sp-card{
+  border-radius:var(--radius);overflow:hidden;position:relative;border:1px solid rgba(181,138,60,.28);
+  min-height:290px;display:flex;flex-direction:column;justify-content:flex-end;color:#f6eedd;
+  box-shadow:0 10px 26px rgba(27,26,23,.1);transition:.35s;
+}
+.sp-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.sp-card svg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sp-inner{position:relative;padding:22px;z-index:2;background:linear-gradient(to top,rgba(12,10,8,.9),rgba(12,10,8,.05) 75%)}
+.sp-inner .st{font-size:11.5px;letter-spacing:.2em;color:var(--gold-2);margin-bottom:8px;display:block}
+.sp-inner h3{font-size:18.5px;margin-bottom:7px;letter-spacing:.03em}
+.sp-inner p{font-size:12.9px;color:#c4baa5;margin-bottom:12px}
+.sp-status{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;color:#d7cbb1}
+.sp-status i{width:6px;height:6px;border-radius:50%;background:var(--gold-2)}
+.sp-status i.live{background:#7fbf95;box-shadow:0 0 0 4px rgba(127,191,149,.18)}
+
+/* ============ 创作者 ============ */
+.creators{background:#fbf7ee}
+.creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.c-card{
+  background:#fffdf8;border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 20px;text-align:center;transition:.3s;position:relative;
+}
+.c-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(181,138,60,.5)}
+.c-avatar-wrap{position:relative;width:76px;height:76px;margin:0 auto 14px}
+.c-avatar-wrap .ring{position:absolute;inset:-6px;border:1px dashed rgba(181,138,60,.5);border-radius:50%}
+.c-avatar-wrap .avatar{width:76px;height:76px;font-size:26px;font-weight:600}
+.c-card h3{font-size:16.5px;letter-spacing:.04em;margin-bottom:4px}
+.c-role{font-size:12px;color:var(--gold);letter-spacing:.1em;margin-bottom:10px}
+.c-bio{font-size:12.8px;color:#6d665a;line-height:1.7;margin-bottom:13px;min-height:66px}
+.c-nums{display:flex;justify-content:center;gap:20px;font-size:12px;color:#857d6d;border-top:1px dashed var(--line);padding-top:12px}
+.c-nums b{color:var(--rust);font-size:14px}
+.c-link{display:inline-block;margin-top:13px;font-size:12.3px;letter-spacing:.08em;color:var(--rust);border-bottom:1px solid rgba(140,74,47,.35)}
+.c-link:hover{color:var(--gold);border-color:var(--gold)}
+
+/* ============ 影像墙 ============ */
+.wall{background:linear-gradient(180deg,#f2ecdf,#f8f3e9);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.masonry{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:132px;gap:15px}
+.m-item{
+  border-radius:12px;overflow:hidden;position:relative;border:1px solid rgba(181,138,60,.28);
+  box-shadow:0 8px 20px rgba(27,26,23,.1);transition:.35s;
+}
+.m-item:hover{transform:translateY(-4px) scale(1.006);box-shadow:var(--shadow)}
+.m-item svg{width:100%;height:100%;object-fit:cover}
+.m-item .m-cap{
+  position:absolute;inset:auto 0 0 0;padding:14px 13px 11px;
+  background:linear-gradient(to top,rgba(12,10,8,.86),transparent);
+  color:#f5ecda;font-size:12.4px;line-height:1.4;letter-spacing:.03em;
+}
+.m-item .m-cap span{display:block;font-size:10.8px;color:#bdb29b;margin-top:2px}
+.m-a{grid-column:span 2;grid-row:span 2}
+.m-b{grid-column:span 1;grid-row:span 2}
+.m-c{grid-column:span 1;grid-row:span 1}
+.m-d{grid-column:span 2;grid-row:span 1}
+
+/* ============ 评价 ============ */
+.reviews{background:#fbf7ee}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{
+  background:#fffdf8;border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;position:relative;transition:.3s;display:flex;flex-direction:column;gap:12px;
+}
+.rev:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.rev::before{
+  content:"“";position:absolute;top:4px;right:16px;font-size:54px;line-height:1;color:rgba(181,138,60,.2);font-family:Georgia,serif;
+}
+.rev-txt{font-size:13.6px;color:#4f4a40;line-height:1.85;position:relative;z-index:2}
+.rev-who{display:flex;align-items:center;gap:10px;border-top:1px dashed var(--line);padding-top:12px;margin-top:auto}
+.rev-who .avatar{width:32px;height:32px;font-size:12.5px}
+.rev-who b{font-size:13px;display:block;font-weight:600}
+.rev-who span{font-size:11.4px;color:#8a8272}
+.stars{color:var(--gold);font-size:12px;letter-spacing:.14em}
+
+/* ============ 灵感 / 数据榜单 ============ */
+.inspire{background:linear-gradient(180deg,#efe9dc,#f4efe6);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.inspire-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:start}
+.tips{display:grid;gap:14px}
+.tip{
+  background:#fffdf8;border:1px solid var(--line);border-radius:12px;padding:17px 19px;
+  display:flex;gap:15px;transition:.28s;
+}
+.tip:hover{border-color:rgba(181,138,60,.5);transform:translateX(4px)}
+.tip-n{
+  width:34px;height:34px;border-radius:9px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--gold),#92691f);color:#fff8e8;font-family:Georgia,serif;font-size:14px;letter-spacing:.02em;
+}
+.tip h3{font-size:15px;margin-bottom:4px;letter-spacing:.02em}
+.tip p{font-size:12.9px;color:#6f685b}
+.rank{background:#241f18;border-radius:var(--radius);padding:26px 24px;color:#f2e9d6;border:1px solid rgba(217,178,106,.26)}
+.rank h3{font-size:17px;letter-spacing:.14em;margin-bottom:6px;color:#f6eddb}
+.rank .sub{font-size:12.2px;color:#a79c86;margin-bottom:18px;letter-spacing:.05em}
+.rank ol{list-style:none;display:grid;gap:2px}
+.rank li{
+  display:flex;align-items:center;gap:13px;padding:11px 4px;border-bottom:1px solid rgba(217,178,106,.13);
+  font-size:13.4px;
+}
+.rank li:last-child{border-bottom:none}
+.rank li b{font-family:Georgia,serif;color:var(--gold-2);font-size:15px;width:22px;flex:none}
+.rank li span{flex:1;color:#ded3bd}
+.rank li i{font-style:normal;font-size:11.9px;color:#9a907c}
+
+/* ============ 品牌故事 ============ */
+.story{background:#fbf7ee}
+.story-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:48px;align-items:center}
+.story-visual{border-radius:16px;overflow:hidden;border:1px solid rgba(181,138,60,.3);box-shadow:var(--shadow)}
+.story-visual svg{width:100%;height:auto}
+.story-text h2{margin-bottom:18px}
+.story-text p{font-size:14.6px;color:#544e44;text-align:justify;margin-bottom:14px}
+.milestones{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.ms{border-left:2px solid var(--gold);padding:4px 0 4px 14px}
+.ms b{display:block;font-size:19px;color:var(--rust);font-family:Georgia,serif}
+.ms span{font-size:12.2px;color:#7c7567}
+
+/* ============ 企业动态 & FAQ ============ */
+.news{background:linear-gradient(180deg,#f2ecdf,#f8f3e9);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.news-faq{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:start}
+.news-list{display:grid;gap:2px}
+.news-item{
+  display:grid;grid-template-columns:88px 1fr;gap:16px;padding:16px 4px;border-bottom:1px solid var(--line);
+  transition:.25s;
+}
+.news-item:hover{background:rgba(181,138,60,.06)}
+.news-item time{font-size:12.2px;color:#938b7a;letter-spacing:.06em;font-family:Georgia,serif}
+.news-item h3{font-size:14.6px;margin-bottom:4px;letter-spacing:.02em}
+.news-item p{font-size:12.7px;color:#736c5e}
+.news-item .pill-mini{font-size:10.8px;color:var(--gold);letter-spacing:.1em;margin-left:6px}
+details.faq{
+  background:#fffdf8;border:1px solid var(--line);border-radius:11px;margin-bottom:10px;
+  padding:0 18px;transition:.25s;overflow:hidden;
+}
+details.faq[open]{border-color:rgba(181,138,60,.55);box-shadow:0 8px 20px rgba(27,26,23,.07)}
+details.faq summary{
+  list-style:none;cursor:pointer;padding:15px 26px 15px 0;font-size:14.3px;position:relative;
+  letter-spacing:.02em;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);
+  font-size:19px;color:var(--gold);font-family:Georgia,serif;transition:.25s;
+}
+details.faq[open] summary::after{content:"−";color:var(--rust)}
+details.faq .faq-body{padding:0 0 16px;font-size:13.2px;color:#6b6457;line-height:1.85}
+
+/* ============ 联系 / 投稿 ============ */
+.contact{
+  background:linear-gradient(160deg,#241f18,#332b20 60%,#241f18);
+  color:#f2e9d6;border-top:1px solid rgba(217,178,106,.3);
+}
+.contact .sec-kicker{color:var(--gold-2)}
+.contact h2{color:#f8f0de}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+.ct-card{
+  border:1px solid rgba(217,178,106,.26);border-radius:var(--radius);padding:24px 22px;
+  background:rgba(255,248,232,.04);transition:.3s;display:flex;flex-direction:column;gap:10px;
+}
+.ct-card:hover{background:rgba(255,248,232,.08);border-color:rgba(217,178,106,.5);transform:translateY(-4px)}
+.ct-card h3{font-size:16.5px;letter-spacing:.05em;color:#f7efdd}
+.ct-card p{font-size:13px;color:#b7ac96;flex:1}
+.ct-card .btn{align-self:flex-start;margin-top:6px}
+.ct-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px;align-items:center}
+.ct-note{font-size:12.4px;color:#a29882;letter-spacing:.04em}
+.ct-note b{color:var(--gold-2);font-weight:600}
+
+/* ============ 页脚 ============ */
+footer{background:#1b1a17;color:#a49b88;padding:52px 0 30px;border-top:1px solid rgba(217,178,106,.22)}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;padding-bottom:34px;border-bottom:1px solid rgba(217,178,106,.14)}
+.foot-brand .logo-txt strong{color:#f3ead7}
+.foot-brand p{font-size:12.9px;line-height:1.85;margin-top:14px;color:#8f8674;max-width:300px}
+.foot-col h4{font-size:13px;letter-spacing:.14em;color:#e6dcc6;margin-bottom:13px}
+.foot-col a,.foot-col span{display:block;font-size:12.7px;color:#948b78;margin-bottom:8px;transition:.22s}
+.foot-col a:hover{color:var(--gold-2)}
+.foot-bottom{padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.1px;color:#7c7466}
+.foot-bottom span{letter-spacing:.03em}
+
+/* ============ 弹窗 & Toast ============ */
+.toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,24px);
+  background:#241f18;color:#f5ecda;padding:11px 22px;border-radius:999px;font-size:13.2px;
+  box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:120;border:1px solid rgba(217,178,106,.35);
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.modal{
+  position:fixed;inset:0;z-index:110;display:grid;place-items:center;padding:24px;
+  background:rgba(18,16,13,.62);backdrop-filter:blur(4px);
+  opacity:0;pointer-events:none;transition:.28s;
+}
+.modal.show{opacity:1;pointer-events:auto}
+.modal-box{
+  background:#fbf7ee;border-radius:16px;max-width:520px;width:100%;padding:30px 28px;
+  border:1px solid rgba(181,138,60,.35);box-shadow:0 30px 60px rgba(12,10,8,.4);
+  transform:translateY(14px);transition:.3s;position:relative;
+}
+.modal.show .modal-box{transform:translateY(0)}
+.modal-box h3{font-size:20px;letter-spacing:.05em;margin-bottom:10px}
+.modal-box .m-sub{font-size:13px;color:#756e60;margin-bottom:18px}
+.modal-close{
+  position:absolute;top:14px;right:16px;font-size:20px;color:#9a917f;width:32px;height:32px;border-radius:50%;
+}
+.modal-close:hover{background:rgba(181,138,60,.15);color:var(--rust)}
+.form-row{display:grid;gap:11px}
+.form-row input,.form-row textarea,.form-row select{
+  width:100%;font-family:inherit;font-size:13.6px;padding:11px 14px;border-radius:9px;
+  border:1px solid var(--line);background:#fffdf8;color:var(--ink);outline:none;transition:.22s;
+}
+.form-row input:focus,.form-row textarea:focus,.form-row select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(181,138,60,.14)}
+.form-row textarea{resize:vertical;min-height:88px}
+.form-actions{display:flex;gap:11px;margin-top:16px;flex-wrap:wrap}
+.share-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:6px}
+.share-grid button{
+  padding:14px 8px;border-radius:11px;border:1px solid var(--line);background:#fffdf8;font-size:13px;
+  display:flex;flex-direction:column;align-items:center;gap:6px;transition:.25s;
+}
+.share-grid button:hover{border-color:var(--gold);background:rgba(181,138,60,.08);transform:translateY(-2px)}
+.share-grid button i{font-style:normal;font-size:19px}
+
+/* ============ 回到顶部 ============ */
+.to-top{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),#92691f);color:#fff8e8;display:grid;place-items:center;
+  box-shadow:0 10px 24px rgba(140,74,47,.36);z-index:80;font-size:17px;
+  opacity:0;pointer-events:none;transition:.3s;
+}
+.to-top.show{opacity:1;pointer-events:auto}
+.to-top:hover{transform:translateY(-3px)}
+
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .focus-grid{grid-template-columns:1fr}
+  .video-grid{grid-template-columns:repeat(2,1fr)}
+  .special-grid{grid-template-columns:1fr 1fr}
+  .creator-grid{grid-template-columns:repeat(2,1fr)}
+  .rev-grid{grid-template-columns:1fr 1fr}
+  .inspire-grid{grid-template-columns:1fr}
+  .story-grid{grid-template-columns:1fr;gap:30px}
+  .news-faq{grid-template-columns:1fr;gap:34px}
+  .contact-grid{grid-template-columns:1fr 1fr}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .masonry{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .m-a,.m-b,.m-c,.m-d{grid-column:span 2;grid-row:span 1}
+}
+@media (max-width:760px){
+  html{scroll-padding-top:118px}
+  .announce .wrap{height:34px;font-size:12px;gap:9px}
+  .site-head{top:34px}
+  .head-inner{height:62px;gap:12px}
+  .logo-txt strong{font-size:14.5px}
+  .logo-txt span{font-size:9px;letter-spacing:.24em}
+  nav.main-nav{
+    position:absolute;top:100%;left:0;right:0;
+    background:#f8f3e9;border-bottom:1px solid var(--line);
+    flex-direction:column;gap:0;padding:8px 0;display:none;
+    box-shadow:0 16px 30px rgba(27,26,23,.1);
+  }
+  nav.main-nav.open{display:flex}
+  nav.main-nav a{padding:12px 22px;border-radius:0;font-size:14.5px}
+  .menu-toggle{display:grid;place-items:center;margin-left:auto}
+  .search-box input{width:88px;font-size:12.5px}
+  .head-tools .btn-gold{display:none}
+  .hero{padding:44px 0 56px}
+  .hero-stats{grid-template-columns:repeat(3,1fr);gap:8px}
+  .stat b{font-size:23px}
+  .stat span{font-size:11px}
+  .float-note{right:0;bottom:-16px;font-size:11.6px;padding:9px 13px}
+  section{padding:52px 0}
+  .video-grid{grid-template-columns:1fr}
+  .special-grid{grid-template-columns:1fr}
+  .creator-grid{grid-template-columns:1fr}
+  .rev-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr;gap:26px}
+  .mini{grid-template-columns:112px 1fr}
+  .mini-body{padding:12px 13px 12px 0}
+  .milestones{grid-template-columns:1fr 1fr}
+  .share-grid{grid-template-columns:1fr 1fr 1fr}
+  .masonry{grid-template-columns:1fr;grid-auto-rows:170px}
+  .m-a,.m-b,.m-c,.m-d{grid-column:span 1;grid-row:span 1}
+  .to-top{right:14px;bottom:16px;width:42px;height:42px}
+  .sec-head{margin-bottom:28px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 -->
+<div class="announce">
+  <div class="wrap">
+    <span class="dot" aria-hidden="true"></span>
+    <div class="announce-track" aria-label="站内最新更新">
+      <span><b>新增</b>《旧宅窗棂修复实录》第 1 集上线，40 分钟完整工序记录</span>
+      <span><b>公告</b>「琉璃川椿·家族影像档案」第二期公开募集，面向所有创作者</span>
+      <span><b>更新</b>创作者主页新增作品合集与创作手记</span>
+      <span><b>预告</b>「老宅新生」主题影像征集将于下月开放报名</span>
+      <span><b>新增</b>《旧宅窗棂修复实录》第 1 集上线，40 分钟完整工序记录</span>
+      <span><b>公告</b>「琉璃川椿·家族影像档案」第二期公开募集，面向所有创作者</span>
+      <span><b>更新</b>创作者主页新增作品合集与创作手记</span>
+      <span><b>预告</b>「老宅新生」主题影像征集将于下月开放报名</span>
+    </div>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="logo" href="#top" aria-label="没落贵族琉璃川椿官方网站首页">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-txt">
+        <strong>没落贵族琉璃川椿</strong>
+        <span>RU RIKAWA TSUBAKI</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主导航">
+      <a href="#focus">焦点影像</a>
+      <a href="#videos">热门内容</a>
+      <a href="#special">品牌企划</a>
+      <a href="#creators">创作者</a>
+      <a href="#wall">影像墙</a>
+      <a href="#story">品牌故事</a>
+      <a href="#news">企业动态</a>
+      <a href="#contact">联系投稿</a>
+    </nav>
+    <div class="head-tools">
+      <form class="search-box" id="searchForm" role="search" aria-label="站内搜索">
+        <input type="search" id="searchInput" placeholder="搜内容 / 创作者" aria-label="搜索关键词">
+        <button type="submit" aria-label="搜索">⌕</button>
+      </form>
+      <button class="btn btn-gold" id="submitBtn" type="button">投稿入口</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+
+<main id="top">
+
+<!-- 首屏 -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">官 方 网 站 · 品 牌 影 像 门 户</span>
+      <h1>没落贵族琉璃川椿</h1>
+      <p class="hero-lead">一座旧宅，一段家史，一群愿意把时间拍下来的人。</p>
+      <p class="hero-desc">没落贵族琉璃川椿是一家以影像为核心的原创视频品牌，长期深耕旧宅、家族记忆与在地生活题材。作为面向公众的官方网站，我们以高清、专业的内容标准记录老建筑的修缮细节、器物的来处与人的日常，并搭建开放的创作者社区。这里既有企业级的制作流程与正版内容库，也有持续运营的社群与线下活动；我们相信品质来自反复打磨，口碑来自一次次真实记录。平台鼓励多元表达，让每一段看似微小的影像都能获得应有的分量与影响力。</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#focus">浏览焦点影像</a>
+        <a class="btn btn-ghost" href="#story">了解品牌故事</a>
+        <a class="btn btn-ghost" href="#creators">认识创作者</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b data-count="186">0</b><span>原创影像作品</span></div>
+        <div class="stat"><b data-count="42">0</b><span>签约创作者（位）</span></div>
+        <div class="stat"><b data-count="96">0</b><span>街区影像档案（期）</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="main-cover">
+        <div class="cover-badge">
+          <span class="pill gold">官方发布</span>
+          <span class="pill">高清 · 4K</span>
+        </div>
+        <svg viewBox="0 0 640 360" role="img" aria-label="琉璃川椿旧宅庭院主视觉，木窗与枯山水石径">
+          <defs>
+            <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3c4b44"/><stop offset="1" stop-color="#71735f"/>
+            </linearGradient>
+            <linearGradient id="wall1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#c9b48f"/><stop offset="1" stop-color="#9c8461"/>
+            </linearGradient>
+            <linearGradient id="gold1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#a87c2f"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="360" fill="url(#sky1)"/>
+          <circle cx="512" cy="86" r="46" fill="#e8d7a8" opacity=".5"/>
+          <circle cx="512" cy="86" r="30" fill="#f1e3bc" opacity=".7"/>
+          <path d="M0 214 L150 168 L320 200 L470 158 L640 196 L640 360 L0 360 Z" fill="#2b302a" opacity=".85"/>
+          <rect x="86" y="128" width="330" height="150" fill="url(#wall1)"/>
+          <rect x="86" y="128" width="330" height="14" fill="#6f5d42"/>
+          <rect x="86" y="264" width="330" height="14" fill="#7b684a"/>
+          <g stroke="#4d3f2c" stroke-width="3" fill="none">
+            <rect x="112" y="156" width="88" height="60" fill="#33413c"/>
+            <rect x="214" y="156" width="88" height="60" fill="#33413c"/>
+            <rect x="316" y="156" width="72" height="60" fill="#33413c"/>
+            <line x1="156" y1="156" x2="156" y2="216"/>
+            <line x1="258" y1="156" x2="258" y2="216"/>
+            <line x1="352" y1="156" x2="352" y2="216"/>
+            <line x1="112" y1="186" x2="200" y2="186"/>
+            <line x1="214" y1="186" x2="302" y2="186"/>
+            <line x1="316" y1="186" x2="388" y2="186"/>
+          </g>
+          <rect x="86" y="128" width="330" height="8" fill="url(#gold1)" opacity=".55"/>
+          <path d="M400 118 q30 -34 66 -18 q22 10 22 34 l-88 6 z" fill="#4a6b5a"/>
+          <path d="M418 138 q26 -20 52 -6 q14 8 14 24 l-66 4 z" fill="#5d7f6b" opacity=".9"/>
+          <rect x="0" y="278" width="640" height="82" fill="#4b4740"/>
+          <g opacity=".55">
+            <ellipse cx="120" cy="318" rx="52" ry="13" fill="#6c6659"/>
+            <ellipse cx="300" cy="330" rx="66" ry="15" fill="#6c6659"/>
+            <ellipse cx="500" cy="312" rx="58" ry="13" fill="#6c6659"/>
+          </g>
+          <rect x="452" y="252" width="14" height="30" fill="#8e7c5c"/>
+          <circle cx="459" cy="248" r="9" fill="#d9b26a" opacity=".85"/>
+          <rect x="180" y="300" width="120" height="6" fill="#8a826e" opacity=".7"/>
+          <rect x="0" y="352" width="640" height="8" fill="#1b1a17" opacity=".4"/>
+        </svg>
+        <div class="cover-play" aria-hidden="true"><span></span></div>
+        <div class="cover-caption">
+          <h2>庭院第一帧：木窗与枯山水</h2>
+          <p>「琉璃川椿·家族影像档案」序章 · 时长 18:24</p>
+        </div>
+      </div>
+      <div class="float-note"><i aria-hidden="true"></i>本月更新 12 条影像，档案持续开放</div>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点影像 -->
+<section class="focus" id="focus">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">
+        <span class="sec-kicker">FOCUS / 焦点影像</span>
+        <h2>本期主推：一次对旧宅的完整回访</h2>
+        <p>由品牌内容团队与在地创作者共同完成，从测绘、记录到修缮，呈现一栋老宅在不同时间尺度里的真实状态。</p>
+      </div>
+      <a class="sec-link" href="#videos">查看全部内容 →</a>
+    </div>
+    <div class="focus-grid">
+      <article class="big-card">
+        <svg viewBox="0 0 720 420" role="img" aria-label="焦点视频封面：修缮工匠在旧宅廊下测量木梁">
+          <defs>
+            <linearGradient id="f1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#4a4436"/><stop offset="1" stop-color="#201d17"/>
+            </linearGradient>
+            <linearGradient id="f2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#c7a86e"/><stop offset="1" stop-color="#8a6a2f"/>
+            </linearGradient>
+          </defs>
+          <rect width="720" height="420" fill="url(#f1)"/>
+          <rect x="0" y="250" width="720" height="170" fill="#2c2822"/>
+          <g opacity=".5" stroke="#c7a86e" stroke-width="2">
+            <line x1="60" y1="0" x2="60" y2="250"/>
+            <line x1="180" y1="0" x2="180" y2="250"/>
+            <line x1="300" y1="0" x2="300" y2="250"/>
+            <line x1="420" y1="0" x2="420" y2="250"/>
+            <line x1="540" y1="0" x2="540" y2="250"/>
+            <line x1="660" y1="0" x2="660" y2="250"/>
+          </g>
+          <rect x="0" y="236" width="720" height="16" fill="url(#f2)" opacity=".8"/>
+          <path d="M300 118 h150 v132 h-150 z" fill="#151310"/>
+          <path d="M300 118 h150 v132 h-150 z" fill="none" stroke="#a98d55" stroke-width="3"/>
+          <line x1="375" y1="118" x2="375" y2="250" stroke="#a98d55" stroke-width="2"/>
+          <line x1="300" y1="184" x2="450" y2="184" stroke="#a98d55" stroke-width="2"/>
+          <g fill="#d9b26a">
+            <circle cx="204" cy="304" r="20"/>
+            <rect x="188" y="324" width="32" height="62" rx="12"/>
+            <rect x="166" y="330" width="22" height="44" rx="9" transform="rotate(-18 177 352)"/>
+            <rect x="242" y="330" width="22" height="44" rx="9" transform="rotate(18 253 352)"/>
+          </g>
+          <rect x="196" y="366" width="8" height="40" fill="#c07c4c"/>
+          <rect x="208" y="366" width="8" height="40" fill="#9a6a3d"/>
+          <rect x="238" y="200" width="10" height="86" fill="#8a6a2f" transform="rotate(30 243 243)"/>
+          <rect x="520" y="150" width="120" height="100" fill="#3d3a30" opacity=".7"/>
+          <circle cx="580" cy="200" r="26" fill="none" stroke="#c7a86e" stroke-width="2" opacity=".6"/>
+          <rect x="0" y="396" width="720" height="24" fill="#12100d" opacity=".7"/>
+          <text x="34" y="62" fill="#e6d6b4" font-family="Georgia,serif" font-size="17" letter-spacing="4">ARCHIVE 01</text>
+          <text x="34" y="90" fill="#a8977a" font-family="Georgia,serif" font-size="12" letter-spacing="2">RU RIKAWA TSUBAKI</text>
+        </svg>
+        <div class="meta">
+          <h3>旧宅修缮全记录：从一根木梁开始</h3>
+          <p>摄制组跟拍七十天，完整记录测绘、选料、榫卯修复与上漆的全过程，并附工匠访谈与工艺说明。</p>
+          <div class="card-foot">
+            <span class="tagline">官方发布</span><span>·</span><span>时长 41:08</span><span>·</span><span>播放 12.8 万</span><span>·</span><span>收藏 6,240</span>
+          </div>
+        </div>
+      </article>
+      <div class="mini-list">
+        <article class="mini">
+          <div class="mini-thumb">
+            <svg viewBox="0 0 300 200" role="img" aria-label="视频封面：庭院苔藓与青石小径的特写">
+              <rect width="300" height="200" fill="#3b4a3f"/>
+              <path d="M0 130 q80 -30 160 0 q80 30 140 6 L300 200 L0 200 Z" fill="#5c6f57"/>
+              <g fill="#8fa882" opacity=".85">
+                <circle cx="60" cy="150" r="16"/><circle cx="96" cy="168" r="12"/><circle cx="150" cy="158" r="18"/><circle cx="212" cy="172" r="13"/><circle cx="262" cy="152" r="15"/>
+              </g>
+              <g fill="#7c8794">
+                <ellipse cx="70" cy="182" rx="34" ry="9"/><ellipse cx="160" cy="190" rx="44" ry="9"/><ellipse cx="248" cy="180" rx="30" ry="8"/>
+              </g>
+              <circle cx="238" cy="52" r="24" fill="#e3d3a8" opacity=".55"/>
+              <rect x="0" y="0" width="300" height="200" fill="none" stroke="#d9b26a" stroke-opacity=".3" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="mini-body">
+            <h3>苔藓的四季：庭院地表的一平方米</h3>
+            <p>固定机位拍摄一年，看同一块地面如何换色。</p>
+            <div class="card-foot"><span class="tagline">治愈影像</span><span>·</span><span>09:12</span></div>
+          </div>
+        </article>
+        <article class="mini">
+          <div class="mini-thumb">
+            <svg viewBox="0 0 300 200" role="img" aria-label="视频封面：旧木柜与陶瓷器皿陈列">
+              <rect width="300" height="200" fill="#3a3026"/>
+              <rect x="26" y="30" width="248" height="146" fill="#5b4732"/>
+              <rect x="26" y="30" width="248" height="10" fill="#8a6a45"/>
+              <line x1="150" y1="40" x2="150" y2="176" stroke="#8a6a45" stroke-width="3"/>
+              <g fill="#cbb089">
+                <ellipse cx="88" cy="84" rx="22" ry="8"/><rect x="78" y="84" width="20" height="30" rx="7"/>
+                <ellipse cx="212" cy="78" rx="26" ry="9"/><rect x="200" y="78" width="24" height="36" rx="9"/>
+                <ellipse cx="88" cy="146" rx="18" ry="6"/><rect x="80" y="146" width="16" height="20" rx="6"/>
+                <ellipse cx="212" cy="148" rx="20" ry="7"/><rect x="202" y="148" width="20" height="22" rx="7"/>
+              </g>
+              <rect x="26" y="176" width="248" height="8" fill="#241c14"/>
+            </svg>
+          </div>
+          <div class="mini-body">
+            <h3>器物来处：家族瓷器的三件旧物</h3>
+            <p>从一方瓷盘讲起，还原一个家族的迁徙路线。</p>
+            <div class="card-foot"><span class="tagline">人物访谈</span><span>·</span><span>22:40</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 热门视频流 -->
+<section id="videos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">
+        <span class="sec-kicker">LATEST / 热门内容</span>
+        <h2>正在被观看的影像</h2>
+        <p>由官方内容团队与社区创作者共同贡献，覆盖修复工艺、家族记忆、城市探索与生活方式等方向，支持标签筛选与收藏。</p>
+      </div>
+      <a class="sec-link" href="#wall">进入影像墙 →</a>
+    </div>
+    <div class="video-grid" id="videoGrid">
+
+      <article class="v-card" data-keywords="窗棂 修复 工艺 教程">
+        <div class="v-cover">
+          <span class="v-badge">教程干货</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：窗棂木格修复工序特写">
+            <rect width="480" height="270" fill="#2e2a22"/>
+            <rect x="40" y="30" width="400" height="210" fill="#191712"/>
+            <g stroke="#b08d4f" stroke-width="4" fill="none">
+              <rect x="70" y="56" width="100" height="80"/>
+              <rect x="190" y="56" width="100" height="80"/>
+              <rect x="310" y="56" width="100" height="80"/>
+              <line x1="120" y1="56" x2="120" y2="136"/>
+              <line x1="240" y1="56" x2="240" y2="136"/>
+              <line x1="360" y1="56" x2="360" y2="136"/>
+              <line x1="70" y1="96" x2="170" y2="96"/>
+              <line x1="190" y1="96" x2="290" y2="96"/>
+              <line x1="310" y1="96" x2="410" y2="96"/>
+            </g>
+            <rect x="140" y="160" width="200" height="60" fill="#4a3f2c"/>
+            <g fill="#d9b26a">
+              <rect x="160" y="172" width="40" height="8" rx="4"/>
+              <rect x="212" y="172" width="60" height="8" rx="4"/>
+              <rect x="284" y="172" width="34" height="8" rx="4"/>
+            </g>
+            <rect x="0" y="240" width="480" height="30" fill="#12100d" opacity=".8"/>
+          </svg>
+          <span class="v-play" aria-hidden="true"></span>
+        </div>
+        <div class="v-body">
+          <h3>窗棂拆解与归位：一根老木条的十道工序</h3>
+          <p class="abs">从编号、拆解到除漆归位，完整拆解旧窗棂的修缮逻辑，附常见误区对照表。</p>
+          <div class="v-tags"><span class="tag">修复</span><span class="tag">工艺</span><span class="tag">实操</span></div>
+          <div class="v-foot">
+            <div class="author">
+              <span class="avatar" style="background:#8a6a2f">匠</span>
+              <span>匠作间 · 阿杉</span>
+            </div>
+            <div class="act">
+              <button type="button" class="like-btn" data-likes="328" aria-label="点赞">☆ 328</button>
+              <button type="button" class="fav-btn" aria-label="收藏">♡</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="v-card" data-keywords="家族 记忆 访谈 口述">
+        <div class="v-cover">
+          <span class="v-badge">人物访谈</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：老人坐在藤椅上口述家族往事">
+            <rect width="480" height="270" fill="#4b3f33"/>
+            <rect x="0" y="180" width="480" height="90" fill="#2f2721"/>
+            <rect x="150" y="60" width="180" height="120" fill="#6b5844" opacity=".5"/>
+            <circle cx="240" cy="104" r="30" fill="#d9b98e"/>
+            <path d="M196 208 q44 -70 88 0 z" fill="#caa97d"/>
+            <rect x="186" y="150" width="108" height="60" rx="24" fill="#caa97d" opacity=".9"/>
+            <g fill="#8a6a45">
+              <rect x="120" y="196" width="240" height="10" rx="5"/>
+              <rect x="132" y="206" width="8" height="34"/>
+              <rect x="340" y="206" width="8" height="34"/>
+            </g>
+            <circle cx="392" cy="70" r="26" fill="#e6d3a4" opacity=".4"/>
+            <rect x="0" y="240" width="480" height="30" fill="#12100d" opacity=".75"/>
+          </svg>
+          <span class="v-play" aria-hidden="true"></span>
+        </div>
+        <div class="v-body">
+          <h3>她说：这座房子里的八个房间和四个人</h3>
+          <p class="abs">与老宅原住户的对谈，从卧室的朝向讲到厨房的灶台，一段跨越六十年的居住记忆。</p>
+          <div class="v-tags"><span class="tag">人物访谈</span><span class="tag">口述史</span></div>
+          <div class="v-foot">
+            <div class="author">
+              <span class="avatar" style="background:#a0583a">川</span>
+              <span>川上记录者</span>
+            </div>
+            <div class="act">
+              <button type="button" class="like-btn" data-likes="512" aria-label="点赞">☆ 512</button>
+              <button type="button" class="fav-btn" aria-label="收藏">♡</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="v-card" data-keywords="城市 探索 街区 在地文化">
+        <div class="v-cover">
+          <span class="v-badge">城市探索</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：老城巷弄与屋檐天际线">
+            <rect width="480" height="270" fill="#5a6a72"/>
+            <rect x="0" y="150" width="130" height="120" fill="#3f4a4c"/>
+            <rect x="150" y="110" width="110" height="160" fill="#4a5450"/>
+            <rect x="280" y="170" width="90" height="100" fill="#3d4744"/>
+            <rect x="388" y="130" width="92" height="140" fill="#46504b"/>
+            <g fill="#2b3330">
+              <polygon points="0,150 65,116 130,150"/>
+              <polygon points="150,110 205,78 260,110"/>
+              <polygon points="280,170 325,144 370,170"/>
+              <polygon points="388,130 434,102 480,130"/>
+            </g>
+            <g fill="#c9b78f" opacity=".75">
+              <rect x="24" y="180" width="18" height="24"/>
+              <rect x="70" y="180" width="18" height="24"/>
+              <rect x="180" y="150" width="20" height="26"/>
+              <rect x="216" y="150" width="20" height="26"/>
+              <rect x="300" y="200" width="18" height="24"/>
+              <rect x="414" y="164" width="18" height="26"/>
+            </g>
+            <rect x="0" y="244" width="480" height="26" fill="#20262a"/>
+            <circle cx="410" cy="52" r="24" fill="#e8d9b0" opacity=".5"/>
+          </svg>
+          <span class="v-play" aria-hidden="true"></span>
+        </div>
+        <div class="v-body">
+          <h3>沿川而行：三公里老街的十二个门牌</h3>
+          <p class="abs">从渡口到旧糖厂，用一条步行动线串起街区里仍在营业的老铺子与它们的主理人。</p>
+          <div class="v-tags"><span class="tag">城市探索</span><span class="tag">在地文化</span><span class="tag">街拍</span></div>
+          <div class="v-foot">
+            <div class="author">
+              <span class="avatar" style="background:#4a6b5a">野</span>
+              <span>野步影像</span>
+            </div>
+            <div class="act">
+              <button type="button" class="like-btn" data-likes="264" aria-label="点赞">☆ 264</button>
+              <button type="button" class="fav-btn" aria-label="收藏">♡</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="v-card" data-keywords="生活 收纳 日常 家居">
+        <div class="v-cover">
+          <span class="v-badge">生活方式</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：旧宅书房内的木书架与阅读角">
+            <rect width="480" height="270" fill="#52443a"/>
+            <rect x="0" y="196" width="480" height="74" fill="#3a2f28"/>
+            <rect x="46" y="34" width="180" height="162" fill="#6b5540"/>
+            <g fill="#3d2f24">
+              <rect x="46" y="86" width="180" height="6"/>
+              <rect x="46" y="138" width="180" height="6"/>
+            </g>
+            <g fill="#c9ab7e">
+              <rect x="58" y="52" width="12" height="34"/><rect x="74" y="46" width="10" height="40"/><rect x="88" y="56" width="14" height="30"/>
+              <rect x="58" y="104" width="16" height="34"/><rect x="80" y="110" width="10" height="28"/><rect x="96" y="100" width="12" height="38"/>
+              <rect x="128" y="52" width="10" height="34"/><rect x="142" y="60" width="14" height="26"/>
+              <rect x="128" y="104" width="14" height="34"/><rect x="148" y="112" width="10" height="26"/>
+            </g>
+            <rect x="270" y="120" width="150" height="80" rx="8" fill="#a08a68"/>
+            <rect x="286" y="104" width="118" height="18" rx="6" fill="#c9b48f"/>
+            <rect x="300" y="200" width="90" height="8" fill="#7c6a4f"/>
+            <circle cx="404" cy="66" r="30" fill="#e6d3a4" opacity=".35"/>
+          </svg>
+          <span class="v-play" aria-hidden="true"></span>
+        </div>
+        <div class="v-body">
+          <h3>把书房还给阅读：一间老屋的收纳改造</h3>
+          <p class="abs">不拆墙、不换地板，仅通过家具与光线的调整，让书房重新成为家里最常待的地方。</p>
+          <div class="v-tags"><span class="tag">家居收纳</span><span class="tag">日常记录</span></div>
+          <div class="v-foot">
+            <div class="author">
+              <span class="avatar" style="background:#8c4a2f">栖</span>
+              <span>栖居笔记</span>
+            </div>
+            <div class="act">
+              <button type="button" class="like-btn" data-likes="418" aria-label="点赞">☆ 418</button>
+              <button type="button" class="fav-btn" aria-label="收藏">♡</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="v-card" data-keywords="手作 DIY 器物 修复">
+        <div class="v-cover">
+          <span class="v-badge">手作 DIY</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：金缮修补的陶碗与工作台">
+            <rect width="480" height="270" fill="#3a3229"/>
+            <rect x="0" y="188" width="480" height="82" fill="#5a4a38"/>
+            <ellipse cx="240" cy="176" rx="104" ry="34" fill="#6e5b45"/>
+            <path d="M148 168 q92 66 184 0 q-8 60 -92 60 q-84 0 -92 -60 z" fill="#cbb089"/>
+            <path d="M196 172 l28 22 l22 -14 l30 26" stroke="#d9b26a" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <g fill="#8a6a45">
+              <rect x="76" y="196" width="60" height="8" rx="4"/>
+              <rect x="86" y="150" width="10" height="46" rx="5"/>
+              <circle cx="352" cy="182" r="18"/>
+              <rect x="344" y="196" width="16" height="34" rx="6"/>
+            </g>
+            <circle cx="120" cy="66" r="26" fill="#e6d3a4" opacity=".3"/>
+            <rect x="0" y="246" width="480" height="24" fill="#12100d" opacity=".7"/>
+          </svg>
+          <span class="v-play" aria-hidden="true"></span>
+        </div>
+        <div class="v-body">
+          <h3>金缮入门：缺口不该被藏起来</h3>
+          <p class="abs">从调漆比例到打磨节奏，演示一件残器的完整修复过程，也谈谈如何看待器物的伤痕。</p>
+          <div class="v-tags"><span class="tag">手作</span><span class="tag">器物</span><span class="tag">教程</span></div>
+          <div class="v-foot">
+            <div class="author">
+              <span class="avatar" style="background:#a87c2f">缮</span>
+              <span>缮物集</span>
+            </div>
+            <div class="act">
+              <button type="button" class="like-btn" data-likes="376" aria-label="点赞">☆ 376</button>
+              <button type="button" class="fav-btn" aria-label="收藏">♡</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="v-card" data-keywords="治愈 影像 自然 慢生活">
+        <div class="v-cover">
+          <span class="v-badge">治愈影像</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="视频封面：雨后山间薄雾与石阶">
+            <rect width="480" height="270" fill="#7c9389"/>
+            <path d="M0 150 q90 -80 190 -10 q100 70 290 0 L480 270 L0 270 Z" fill="#5d7568"/>
+            <path d="M0 190 q120 -50 240 10 q120 60 240 -10 L480 270 L0 270 Z" fill="#48604f"/>
+            <path d="M180 270 l50 -120 l24 0 l66 120 z" fill="#8d9c8c" opacity=".8"/>
+            <g fill="#3c4f42" opacity=".85">
+              <polygon points="60,150 92,96 124,150"/>
+              <polygon points="96,156 130,98 164,156"/>
+              <polygon points="330,146 366,86 402,146"/>
+            </g>
+            <ellipse cx="240" cy="104" rx="150" ry="24" fill="#dfe8e0" opacity=".35"/>
+            <ellipse cx="240" cy="120" rx="200" ry="18" fill="#dfe8e0" opacity=".22"/>
+            <rect x="0" y="248" width="480" height="22" fill="#26332b"/>
+          </svg>
+          <span class="v-play" aria-hidden="true"></span>
+        </div>
+        <div class="v-body">
+          <h3>雨后石阶：把一段安静留给耳朵</h3>
+          <p class="abs">没有旁白，只有水滴、鸟鸣和脚步，一次关于环境声的影像实验。</p>
+          <div class="v-tags"><span class="tag">治愈</span><span class="tag">环境声</span><span class="tag">慢生活</span></div>
+          <div class="v-foot">
+            <div class="author">
+              <span class="avatar" style="background:#5d7568">青</span>
+              <span>青苔工作室</span>
+            </div>
+            <div class="act">
+              <button type="button" class="like-btn" data-likes="634" aria-label="点赞">☆ 634</button>
+              <button type="button" class="fav-btn" aria-label="收藏">♡</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 品牌企划 / 专题 -->
+<section class="special" id="special">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">
+        <span class="sec-kicker">SERIES / 品牌企划</span>
+        <h2>长期进行中的四个影像企划</h2>
+        <p>以季度为单位持续更新，每个企划都对应着明确的记录对象与开放的参与方式，欢迎创作者报名加入。</p>
+      </div>
+      <a class="sec-link" href="#contact">报名参与 →</a>
+    </div>
+    <div class="special-grid">
+
+      <article class="sp-card">
+        <svg viewBox="0 0 400 300" role="img" aria-label="专题封面：旧宅档案的木箱与卷宗">
+          <rect width="400" height="300" fill="#3d342a"/>
+          <rect x="60" y="120" width="280" height="120" fill="#6b5540"/>
+          <rect x="60" y="112" width="280" height="16" fill="#8a6a45"/>
+          <rect x="150" y="80" width="100" height="40" fill="#cbb089"/>
+          <line x1="170" y1="88" x2="230" y2="88" stroke="#8a6a45" stroke-width="3"/>
+          <line x1="170" y1="100" x2="212" y2="100" stroke="#8a6a45" stroke-width="3"/>
+          <g stroke="#3d342a" stroke-width="3">
+            <line x1="60" y1="150" x2="340" y2="150"/>
+            <line x1="200" y1="120" x2="200" y2="240"/>
+          </g>
+          <circle cx="300" cy="70" r="30" fill="#e6d3a4" opacity=".3"/>
+          <rect x="0" y="240" width="400" height="60" fill="#241c14"/>
+        </svg>
+        <div class="sp-inner">
+          <span class="st">企划 01</span>
+          <h3>琉璃川椿·家族影像档案</h3>
+          <p>面向所有家庭开放的口述史与老物件记录计划，已收录九十六期影像档案。</p>
+          <span class="sp-status"><i class="live"></i>持续更新中 · 第 3 季</span>
+        </div>
+      </article>
+
+      <article class="sp-card">
+        <svg viewBox="0 0 400 300" role="img" aria-label="专题封面：工匠双手与工具的工作台">
+          <rect width="400" height="300" fill="#2f3a33"/>
+          <rect x="0" y="180" width="400" height="120" fill="#4a3f2c"/>
+          <g stroke="#c9ab7e" stroke-width="5" fill="none">
+            <rect x="86" y="70" width="70" height="110" rx="6"/>
+            <line x1="120" y1="70" x2="120" y2="180"/>
+          </g>
+          <rect x="200" y="140" width="140" height="14" rx="7" fill="#b08d4f"/>
+          <rect x="300" y="120" width="16" height="54" rx="6" fill="#8a6a45"/>
+          <circle cx="330" cy="80" r="26" fill="#e6d3a4" opacity=".25"/>
+          <circle cx="180" cy="230" r="34" fill="#8a6a45" opacity=".5"/>
+        </svg>
+        <div class="sp-inner">
+          <span class="st">企划 02</span>
+          <h3>匠作间：一门手艺的十二个月</h3>
+          <p>全年跟拍六位修复师与手作人，记录他们在不同季节里的工作节奏与选择。</p>
+          <span class="sp-status"><i class="live"></i>更新至第 8 集</span>
+        </div>
+      </article>
+
+      <article class="sp-card">
+        <svg viewBox="0 0 400 300" role="img" aria-label="专题封面：街区夜间的店铺灯光">
+          <rect width="400" height="300" fill="#20262a"/>
+          <rect x="0" y="170" width="400" height="130" fill="#141a1c"/>
+          <g fill="#333c3d">
+            <rect x="20" y="110" width="90" height="90"/>
+            <rect x="130" y="90" width="80" height="110"/>
+            <rect x="230" y="120" width="70" height="80"/>
+            <rect x="318" y="100" width="70" height="100"/>
+          </g>
+          <g fill="#e8c884">
+            <rect x="40" y="130" width="16" height="22"/>
+            <rect x="70" y="130" width="16" height="22"/>
+            <rect x="150" y="120" width="18" height="24"/>
+            <rect x="252" y="146" width="16" height="22"/>
+            <rect x="338" y="130" width="16" height="24"/>
+          </g>
+          <g fill="#d9b26a" opacity=".8">
+            <circle cx="60" cy="196" r="7"/><circle cx="180" cy="206" r="7"/><circle cx="266" cy="196" r="7"/><circle cx="352" cy="206" r="7"/>
+          </g>
+          <ellipse cx="200" cy="244" rx="180" ry="22" fill="#3c4b48" opacity=".5"/>
+        </svg>
+        <div class="sp-inner">
+          <span class="st">企划 03</span>
+          <h3>夜行街区：关灯之前的三十分钟</h3>
+          <p>走访仍在深夜营业的老铺，记录店主一天中最后的一段工作与他们的收尾习惯。</p>
+          <span class="sp-status"><i></i>下月开放征集</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 创作者矩阵 -->
+<section class="creators" id="creators">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">
+        <span class="sec-kicker">CREATORS / 创作者矩阵</span>
+        <h2>把镜头交给长期在场的人</h2>
+        <p>平台以签约与共创两种方式合作，关注创作者的持续产出能力与内容品质，而非短期热度。</p>
+      </div>
+      <a class="sec-link" href="#contact">申请成为创作者 →</a>
+    </div>
+    <div class="creator-grid">
+
+      <article class="c-card">
+        <div class="c-avatar-wrap">
+          <span class="ring" aria-hidden="true"></span>
+          <span class="avatar" style="background:linear-gradient(135deg,#a87c2f,#6f4c1c);width:76px;height:76px;font-size:26px">杉</span>
+        </div>
+        <h3>阿杉</h3>
+        <div class="c-role">木作修复 · 品牌签约</div>
+        <p class="c-bio">在旧宅里工作九年，擅长把复杂的修缮工序拆成可看懂的步骤，讲解克制、细节扎实。</p>
+        <div class="c-nums"><span><b>46</b> 作品</span><span><b>3.2万</b> 关注</span></div>
+        <button type="button" class="c-link author-btn" data-author="阿杉" data-detail="木作修复师，品牌签约创作者。九年间参与二十余处旧宅修缮，主张「修旧如旧，也修旧如新用」。">查看档案</button>
+      </article>
+
+      <article class="c-card">
+        <div class="c-avatar-wrap">
+          <span class="ring" aria-hidden="true"></span>
+          <span class="avatar" style="background:linear-gradient(135deg,#a0583a,#6c3520);width:76px;height:76px;font-size:26px">川</span>
+        </div>
+        <h3>川上记录者</h3>
+        <div class="c-role">口述史 · 品牌签约</div>
+        <p class="c-bio">专注家族记忆与口述访谈，习惯用长镜头等待受访者把话说完，作品节奏舒缓、情感真实。</p>
+        <div class="c-nums"><span><b>31</b> 作品</span><span><b>2.6万</b> 关注</span></div>
+        <button type="button" class="c-link author-btn" data-author="川上记录者" data-detail="口述史影像作者，累计完成七十余位受访者的深度访谈，主张「先听完，再开机」。">查看档案</button>
+      </article>
+
+      <article class="c-card">
+        <div class="c-avatar-wrap">
+          <span class="ring" aria-hidden="true"></span>
+          <span class="avatar" style="background:linear-gradient(135deg,#4a6b5a,#2c463a);width:76px;height:76px;font-size:26px">野</span>
+        </div>
+        <h3>野步影像</h3>
+        <div class="c-role">城市探索 · 共创伙伴</div>
+        <p class="c-bio">两人小组，以步行为主要拍摄方式，擅长把一条街巷的空间关系梳理成清晰的影像叙事。</p>
+        <div class="c-nums"><span><b>58</b> 作品</span><span><b>4.1万</b> 关注</span></div>
+        <button type="button" class="c-link author-btn" data-author="野步影像" data-detail="城市探索类创作小组，已完成十二条街区影像路线，持续更新在地文化观察。">查看档案</button>
+      </article>
+
+      <article class="c-card">
+        <div class="c-avatar-wrap">
+          <span class="ring" aria-hidden="true"></span>
+          <span class="avatar" style="background:linear-gradient(135deg,#8c4a2f,#5a2c1a);width:76px;height:76px;font-size:26px">栖</span>
+        </div>
+        <h3>栖居笔记</h3>
+        <div class="c-role">生活方式 · 共创伙伴</div>
+        <p class="c-bio">关注小空间里的居住选择，擅长用光线与家具关系讲清楚一处空间的改造思路。</p>
+        <div class="c-nums"><span><b>27</b> 作品</span><span><b>1.9万</b> 关注</span></div>
+        <button type="button" class="c-link author-btn" data-author="栖居笔记" data-detail="居住方式记录者，主张「不急着换房子，先把现有空间用明白」。">查看档案</button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 影像墙 -->
+<section class="wall" id="wall">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">
+        <span class="sec-kicker">GALLERY / 影像墙</span>
+        <h2>社区影像：同一座旧宅的九种看法</h2>
+        <p>来自社区投稿的图文作品，尺寸与视角各不相同，共同构成一份立体的空间档案。</p>
+      </div>
+      <a class="sec-link" href="#contact">上传我的作品 →</a>
+    </div>
+    <div class="masonry">
+      <figure class="m-item m-a">
+        <svg viewBox="0 0 400 300" role="img" aria-label="影像墙作品：旧宅正立面在清晨光线下的全貌">
+          <rect width="400" height="300" fill="#c9bda6"/>
+          <rect x="0" y="200" width="400" height="100" fill="#8f8571"/>
+          <rect x="50" y="70" width="300" height="150" fill="#b3a488"/>
+          <polygon points="40,70 200,20 360,70" fill="#5a4a38"/>
+          <g fill="#5d6a63">
+            <rect x="80" y="100" width="52" height="54"/>
+            <rect x="174" y="100" width="52" height="54"/>
+            <rect x="268" y="100" width="52" height="54"/>
+          </g>
+          <g fill="#3a3026">
+            <rect x="80" y="100" width="52" height="54" fill="none" stroke="#3a3026" stroke-width="3"/>
+            <line x1="106" y1="100" x2="106" y2="154" stroke="#3a3026" stroke-width="2"/>
+            <rect x="80" y="100" width="52" height="54" fill="none" stroke="#3a3026" stroke-width="3"/>
+            <rect x="296" y="188" width="40" height="32" fill="#6b5540"/>
+          </g>
+          <rect x="170" y="188" width="60" height="32" fill="#6b5540"/>
+          <rect x="0" y="200" width="400" height="4" fill="#241c14" opacity=".5"/>
+        </svg>
+        <figcaption class="m-cap">清晨六点的正立面<span>摄影 · 拾光者No.11</span></figcaption>
+      </figure>
+      <figure class="m-item m-b">
+        <svg viewBox="0 0 300 400" role="img" aria-label="影像墙作品：竖向构图的木质楼梯与扶手">
+          <rect width="300" height="400" fill="#3f352a"/>
+          <g stroke="#8a6a45" stroke-width="6">
+            <line x1="40" y1="380" x2="150" y2="60"/>
+            <line x1="120" y1="380" x2="230" y2="60"/>
+          </g>
+          <g fill="#6b5540">
+            <rect x="60" y="320" width="110" height="10"/>
+            <rect x="82" y="270" width="110" height="10"/>
+            <rect x="104" y="220" width="110" height="10"/>
+            <rect x="126" y="170" width="110" height="10"/>
+            <rect x="148" y="120" width="110" height="10"/>
+            <rect x="170" y="70" width="110" height="10"/>
+          </g>
+          <circle cx="240" cy="46" r="30" fill="#e6d3a4" opacity=".35"/>
+          <rect x="0" y="380" width="300" height="20" fill="#241c14"/>
+        </svg>
+        <figcaption class="m-cap">木质楼梯的第二跑<span>摄影 · 半层之间</span></figcaption>
+      </figure>
+      <figure class="m-item m-c">
+        <svg viewBox="0 0 300 200" role="img" aria-label="影像墙作品：窗台上的旧陶罐与干花">
+          <rect width="300" height="200" fill="#b9a888"/>
+          <rect x="0" y="120" width="300" height="80" fill="#8a7a60"/>
+          <ellipse cx="120" cy="120" rx="42" ry="14" fill="#6b5540"/>
+          <path d="M92 120 q10 -56 28 -56 q18 0 28 56 z" fill="#cbb089"/>
+          <g stroke="#7c6a4f" stroke-width="3" fill="none">
+            <line x1="120" y1="64" x2="112" y2="20"/>
+            <line x1="120" y1="64" x2="140" y2="26"/>
+            <line x1="120" y1="64" x2="152" y2="44"/>
+          </g>
+          <g fill="#8f9c78">
+            <ellipse cx="112" cy="18" rx="9" ry="6"/>
+            <ellipse cx="140" cy="24" rx="9" ry="6"/>
+            <ellipse cx="152" cy="42" rx="9" ry="6"/>
+          </g>
+          <circle cx="240" cy="56" r="22" fill="#e6d3a4" opacity=".3"/>
+        </svg>
+        <figcaption class="m-cap">窗台陶罐与干花<span>摄影 · 一隅</span></figcaption>
+      </figure>
+      <figure class="m-item m-d">
+        <svg viewBox="0 0 400 200" role="img" aria-label="影像墙作品：长廊立柱的透视关系">
+          <rect width="400" height="200" fill="#4a4438"/>
+          <rect x="0" y="140" width="400" height="60" fill="#2f2a22"/>
+          <g fill="#6b5540">
+            <rect x="30" y="20" width="18" height="140"/>
+            <rect x="96" y="30" width="14" height="130"/>
+            <rect x="152" y="40" width="11" height="120"/>
+            <rect x="200" y="50" width="9" height="110"/>
+            <rect x="240" y="58" width="7" height="102"/>
+            <rect x="272" y="66" width="6" height="94"/>
+          </g>
+          <polygon points="30,20 272,66 272,72 30,26" fill="#8a6a45" opacity=".7"/>
+          <rect x="330" y="80" width="60" height="80" fill="#c9b48f" opacity=".55"/>
+        </svg>
+        <figcaption class="m-cap">长廊深处的一扇光<span>摄影 · 拾光者No.11</span></figcaption>
+      </figure>
+      <figure class="m-item m-c">
+        <svg viewBox="0 0 300 200" role="img" aria-label="影像墙作品：庭院石钵与积水倒影">
+          <rect width="300" height="200" fill="#5d7568"/>
+          <rect x="0" y="120" width="300" height="80" fill="#48604f"/>
+          <ellipse cx="150" cy="140" rx="60" ry="20" fill="#3c4f42"/>
+          <ellipse cx="150" cy="136" rx="48" ry="14" fill="#8fa89a"/>
+          <ellipse cx="150" cy="132" rx="24" ry="6" fill="#c8d8cc" opacity=".7"/>
+          <g fill="#7c8794">
+            <ellipse cx="70" cy="176" rx="26" ry="7"/>
+            <ellipse cx="232" cy="182" rx="32" ry="8"/>
+          </g>
+          <circle cx="248" cy="46" r="22" fill="#e6d3a4" opacity=".5"/>
+        </svg>
+        <figcaption class="m-cap">石钵里的一小块天<span>摄影 · 青苔住客</span></figcaption>
+      </figure>
+      <figure class="m-item m-c">
+        <svg viewBox="0 0 300 200" role="img" aria-label="影像墙作品：屋檐下的雨水成线">
+          <rect width="300" height="200" fill="#3c4b44"/>
+          <polygon points="0,80 300,40 300,58 0,98" fill="#2a302a"/>
+          <g stroke="#a9b8ad" stroke-width="2" opacity=".75">
+            <line x1="40" y1="98" x2="34" y2="170"/>
+            <line x1="86" y1="94" x2="80" y2="182"/>
+            <line x1="136" y1="88" x2="131" y2="176"/>
+            <line x1="188" y1="84" x2="183" y2="184"/>
+            <line x1="240" y1="76" x2="236" y2="172"/>
+          </g>
+          <ellipse cx="150" cy="184" rx="120" ry="12" fill="#5d7568" opacity=".6"/>
+        </svg>
+        <figcaption class="m-cap">檐下听雨的三分钟<span>摄影 · 檐角</span></figcaption>
+      </figure>
+      <figure class="m-item m-c">
+        <svg viewBox="0 0 300 200" role="img" aria-label="影像墙作品：旧门牌与铜环特写">
+          <rect width="300" height="200" fill="#6b5540"/>
+          <g stroke="#3a3026" stroke-width="2">
+            <line x1="0" y1="40" x2="300" y2="40"/>
+            <line x1="0" y1="80" x2="300" y2="80"/>
+            <line x1="0" y1="120" x2="300" y2="120"/>
+            <line x1="0" y1="160" x2="300" y2="160"/>
+          </g>
+          <rect x="110" y="58" width="80" height="52" rx="6" fill="#cbb089"/>
+          <text x="150" y="94" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#5a4a38">椿</text>
+          <circle cx="222" cy="100" r="14" fill="none" stroke="#d9b26a" stroke-width="5"/>
+          <circle cx="222" cy="100" r="6" fill="#8a6a45"/>
+        </svg>
+        <figcaption class="m-cap">门牌上的一个椿字<span>摄影 · 门内门外</span></figcaption>
+      </figure>
+      <figure class="m-item m-c">
+        <svg viewBox="0 0 300 200" role="img" aria-label="影像墙作品：书房夜读的台灯光与书页">
+          <rect width="300" height="200" fill="#2a251d"/>
+          <rect x="0" y="150" width="300" height="50" fill="#1b1a17"/>
+          <polygon points="150,20 236,150 64,150" fill="#e8c884" opacity=".2"/>
+          <path d="M60 150 q40 -30 100 0 z" fill="#cbb089"/>
+          <g fill="#d9b26a">
+            <rect x="150" y="40" width="12" height="76" rx="5"/>
+            <ellipse cx="156" cy="36" rx="26" ry="12"/>
+          </g>
+          <rect x="100" y="150" width="140" height="8" fill="#6b5540"/>
+        </svg>
+        <figcaption class="m-cap">夜里十一点的台灯<span>摄影 · 栖居笔记</span></figcaption>
+      </figure>
+      <figure class="m-item m-c">
+        <svg viewBox="0 0 300 200" role="img" aria-label="影像墙作品：院中老树与石阶的剪影">
+          <rect width="300" height="200" fill="#a8a48e"/>
+          <rect x="0" y="140" width="300" height="60" fill="#7a7660"/>
+          <g stroke="#3a3a2e" stroke-width="9" fill="none" stroke-linecap="round">
+            <line x1="80" y1="160" x2="90" y2="60"/>
+            <line x1="90" y1="100" x2="46" y2="66"/>
+            <line x1="90" y1="88" x2="140" y2="52"/>
+            <line x1="90" y1="120" x2="38" y2="100"/>
+          </g>
+          <g fill="#3a3a2e">
+            <circle cx="46" cy="64" r="18"/><circle cx="140" cy="50" r="20"/><circle cx="38" cy="98" r="14"/><circle cx="90" cy="48" r="16"/>
+          </g>
+          <g fill="#8d8873">
+            <rect x="180" y="160" width="80" height="8"/>
+            <rect x="196" y="172" width="80" height="8"/>
+            <rect x="212" y="184" width="80" height="8"/>
+          </g>
+        </svg>
+        <figcaption class="m-cap">老树与三级石阶<span>摄影 · 野步影像</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">
+        <span class="sec-kicker">VOICES / 社区之声</span>
+        <h2>来自观众与创作者的真实反馈</h2>
+        <p>我们不删除真实的批评，也会把建议放进下一次内容规划里。以下是不同角度的评价。</p>
+      </div>
+    </div>
+    <div class="rev-grid">
+
+      <article class="rev">
+        <div class="stars" aria-label="五星评价">★★★★★</div>
+        <p class="rev-txt">最喜欢的是它没有把老宅拍成悲情故事。修缮过程拍得很实在，材料、工时、失误都摆出来了，看完能理解为什么一扇窗要修两个月。</p>
+        <div class="rev-who">
+          <span class="avatar" style="background:#8a6a2f">周</span>
+          <div><b>周叙白</b><span>建筑设计从业者</span></div>
+        </div>
+      </article>
+
+      <article class="rev">
+        <div class="stars" aria-label="五星评价">★★★★★</div>
+        <p class="rev-txt">口述史那几期我看了三遍。剪辑很克制，没有硬加音乐去煽情，受访者停顿的地方都保留着，这种耐心在现在的视频里挺少见。</p>
+        <div class="rev-who">
+          <span class="avatar" style="background:#a0583a">林</span>
+          <div><b>林知远</b><span>高校纪录片课教师</span></div>
+        </div>
+      </article>
+
+      <article class="rev">
+        <div class="stars" aria-label="四星评价">★★★★☆</div>
+        <p class="rev-txt">内容质量确实高，就是更新频率有点慢，等一集要小半个月。不过换个角度想，大概慢工才出这种片子。希望以后能多一些短时长的日常碎片。</p>
+        <div class="rev-who">
+          <span class="avatar" style="background:#4a6b5a">陈</span>
+          <div><b>陈米</b><span>平面设计师 · 社区用户</span></div>
+        </div>
+      </article>
+
+      <article class="rev">
+        <div class="stars" aria-label="五星评价">★★★★★</div>
+        <p class="rev-txt">作为投稿作者说两句：审核会给具体意见，不是一句「不符合」就退回。我第一支片子被指出镜头太晃、收音有底噪，改完重投就过了，这个过程挺受用的。</p>
+        <div class="rev-who">
+          <span class="avatar" style="background:#a87c2f">许</span>
+          <div><b>许行者</b><span>共创创作者</span></div>
+        </div>
+      </article>
+
+      <article class="rev">
+        <div class="stars" aria-label="四星评价">★★★★☆</div>
+        <p class="rev-txt">影像墙的排版很有意思，大图小图错落着来，翻起来像在逛一个小型展览。建议给每张图加个拍摄地点的标注，会更有探索感。</p>
+        <div class="rev-who">
+          <span class="avatar" style="background:#5d7568">何</span>
+          <div><b>何三三</b><span>摄影爱好者</span></div>
+        </div>
+      </article>
+
+      <article class="rev">
+        <div class="stars" aria-label="五星评价">★★★★★</div>
+        <p class="rev-txt">带孩子一起看了「庭院的一平方米」那期，他第一次知道苔藓一年会变好几种颜色。这类内容对家庭观众很友好，画面干净，讲解也不居高临下。</p>
+        <div class="rev-who">
+          <span class="avatar" style="background:#8c4a2f">苏</span>
+          <div><b>苏文静</b><span>亲子内容关注者</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 创作灵感 + 榜单 -->
+<section class="inspire" id="inspire">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="t">
+        <span class="sec-kicker">INSPIRATION / 创作灵感</span>
+        <h2>给准备开机的人：几条实用建议</h2>
+        <p>整理自品牌内容团队的内部复盘与创作者访谈，适合刚进入旧宅、手艺、家族记忆题材的拍摄者。</p>
+      </div>
+    </div>
+    <div class="inspire-grid">
+      <div class="tips">
+        <div class="tip">
+          <span class="tip-n">01</span>
+          <div>
+            <h3>先做动线测绘，再决定机位</h3>
+            <p>进老宅前画一张简单平面图，标出光源方向与人流路径。多数空镜之所以好看，是因为机位本身符合空间的真实逻辑，而不是临时找角度。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <span class="tip-n">02</span>
+          <div>
+            <h3>给手艺人留出沉默的时间</h3>
+            <p>修复类内容最动人的部分常发生在不说话的时候。拍摄时不要急着提问，把十分钟安静的工作声完整收进去，剪辑时你会感谢当时的自己。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <span class="tip-n">03</span>
+          <div>
+            <h3>用一件小物承担整段叙事</h3>
+            <p>与其面面俱到，不如选定一件器物——一只碗、一枚门牌、一把旧尺，让它贯穿全片。观众记住的往往就是这一个具体的物件。</p>
+          </div>
+        </div>
+        <div class="tip">
+          <span class="tip-n">04</span>
+          <div>
+            <h3>保留遗憾，不必强行升华</h3>
+            <p>修复未必成功，访谈也可能留有空白。诚实地呈现未完成的状态，往往比一个漂亮的结尾更接近真实的记录伦理。</p>
+          </div>
+        </div>
+      </div>
+      <aside class="rank" aria-label="社区影像热度榜">
+        <h3>本月影像热度榜</h3>
+        <p class="sub">统计周期：近 30 日 · 综合播放、收藏与完播率</p>
+        <ol>
+          <li><b>01</b><span>雨后石阶：把一段安静留给耳朵</span><i>热度 98</i></li>
+          <li><b>02</b><span>她说：八个房间和四个人</span><i>热度 94</i></li>
+          <li><b>03</b><span>把书房还给阅读</span><i>热度 89</i></li>
+          <li><b>04</b><span>金缮入门：缺口不该被藏起来</span><i>热度 86</i></li>
+          <li><b>05</b><span>窗棂拆解与归位</span><i>热度 81</i></li>
+          <li><b>06</b><span>沿川而行：三公里老街</span><i>热度 77</i></li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌故事 -->
+<section class="story" id="story">
+  <div class="wrap story-grid">
+    <div class="story-visual">
+      <svg viewBox="0 0 520 420" role="img" aria-label="品牌故事配图：旧宅与新生建筑并置的俯视图">
+        <rect width="520" height="420" fill="#e4dccb"/>
+        <rect x="30" y="60" width="220" height="200" fill="#b3a488"/>
+        <polygon points="20,60 140,10 260,60" fill="#5a4a38"/>
+        <g fill="#5d6a63">
+          <rect x="60" y="100" width="48" height="50"/>
+          <rect x="132" y="100" width="48" height="50"/>
+          <rect x="60" y="170" width="48" height="50"/>
+          <rect x="132" y="170" width="48" height="50"/>
+        </g>
+        <rect x="270" y="140" width="220" height="160" fill="#8f8571"/>
+        <rect x="290" y="120" width="180" height="20" fill="#6b5540"/>
+        <g fill="#c9bda6">
+          <rect x="306" y="168" width="60" height="60"/>
+          <rect x="392" y="168" width="60" height="60"/>
+        </g>
+        <g fill="#3a4a44">
+          <rect x="316" y="178" width="40" height="40"/>
+          <rect x="402" y="178" width="40" height="40"/>
+        </g>
+        <path d="M0 340 q120 -44 260 -10 q140 34 260 -6 L520 420 L0 420 Z" fill="#8ba08f"/>
+        <g fill="#4a6b5a">
+          <circle cx="80" cy="350" r="22"/><circle cx="112" cy="362" r="16"/>
+          <circle cx="430" cy="352" r="20"/><circle cx="462" cy="366" r="14"/>
+        </g>
+        <rect x="230" y="280" width="30" height="60" fill="#8a6a45"/>
+        <path d="M230 280 q15 -30 30 0 z" fill="#d9b26a"/>
+        <g stroke="#b58a3c" stroke-dasharray="5 6" stroke-width="2" fill="none" opacity=".85">
+          <line x1="150" y1="300" x2="380" y2="300"/>
+          <line x1="380" y1="300" x2="380" y2="200"/>
+        </g>
+      </svg>
+    </div>
+    <div class="story-text">
+      <span class="sec-kicker">BRAND STORY / 品牌故事</span>
+      <h2>记录一座旧宅，也记录它如何被重新使用</h2>
+      <p>没落贵族琉璃川椿并非一座具体宅邸的名字，而是我们对一种状态的定义：拥有漫长历史的建筑与家族，在时代变迁中逐渐失去原有的位置，却仍然保留着值得被认真对待的细节。品牌以此为题，从二〇一七年开始持续记录旧宅的修复、居住与再利用。</p>
+      <p>作为深耕垂直领域的原创影像平台，我们坚持以企业级的制作标准对待每一部短片：前期测绘与资料整理、现场同期收音、后期逐帧校色，都由固定的内容团队完成。我们不追求数量，更看重每一部作品是否能经得起五年后重看。这也是我们理解「匠心」的方式——把一件小事反复做到位。</p>
+      <p>与此同时，平台始终向社区开放。签约创作者与投稿作者共同构成内容生态，官方提供选题、拍摄与剪辑上的支持，也承担审核与规范的责任。我们相信真实的力量来自多元视角，包容不同节奏与表达，才能让一座旧宅被更完整地看见。</p>
+      <div class="milestones">
+        <div class="ms"><b>2017</b><span>品牌注册，开始旧宅影像记录</span></div>
+        <div class="ms"><b>2021</b><span>创作者社区正式对外开放</span></div>
+        <div class="ms"><b>2024</b><span>影像档案突破两百期</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 企业动态 + FAQ -->
+<section class="news" id="news">
+  <div class="wrap news-faq">
+    <div>
+      <div class="sec-head" style="margin-bottom:24px">
+        <div class="t">
+          <span class="sec-kicker">NEWS / 企业动态</span>
+          <h2>官方发布与更新日志</h2>
+        </div>
+      </div>
+      <div class="news-list">
+        <article class="news-item">
+          <time datetime="2024-06-18">2024.06.18</time>
+          <div>
+            <h3>「家族影像档案」第二季收官<span class="pill-mini">官方发布</span></h3>
+            <p>本季共收录三十一期作品，覆盖十二座城市，完整档案将逐步在平台上线。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <time datetime="2024-06-05">2024.06.05</time>
+          <div>
+            <h3>创作者投稿审核标准更新说明</h3>
+            <p>新增对同期声质量与素材授权的明确要求，审核反馈将附带具体修改建议。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <time datetime="2024-05-22">2024.05.22</time>
+          <div>
+            <h3>与三家文保机构达成内容合作<span class="pill-mini">合作</span></h3>
+            <p>后续将联合推出古建修缮科普系列，并由机构提供技术审校支持。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <time datetime="2024-05-09">2024.05.09</time>
+          <div>
+            <h3>影像墙新增「尺寸混合」展示模式</h3>
+            <p>创作者上传时可标注图片比例，系统将自动适配大图与中图的穿插排布。</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <time datetime="2024-04-27">2024.04.27</time>
+          <div>
+            <h3>品牌三周年线下放映会回顾</h3>
+            <p>现场放映六部短片，并邀请修复师与观众进行四十分钟交流，实录已上线。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div>
+      <div class="sec-head" style="margin-bottom:24px">
+        <div class="t">
+          <span class="sec-kicker">FAQ / 帮助</span>
+          <h2>常见问题</h2>
+        </div>
+      </div>
+      <details class="faq">
+        <summary>如何向平台投稿自己的作品？</summary>
+        <div class="faq-body">点击页面「投稿入口」填写作品信息与素材链接，审核周期通常为七至十个工作日。建议随作品附上拍摄说明与素材授权情况，能显著提高沟通效率。</div>
+      </details>
+      <details class="faq">
+        <summary>平台对作品时长有要求吗？</summary>
+        <div class="faq-body">没有硬性上限。我们更关注内容是否成立：三分钟的日常碎片与四十分钟的长片我们都欢迎，但长片需要具备清晰的结构与足够的现场信息量。</div>
+      </details>
+      <details class="faq">
+        <summary>签约创作者与普通投稿有什么区别？</summary>
+        <div class="faq-body">签约创作者会获得选题支持、拍摄资源与固定更新计划，并参与品牌企划；普通投稿则以单部作品方式合作，版权与署名方式在投稿协议中单独约定。</div>
+      </details>
+      <details class="faq">
+        <summary>作品中出现真实人物需要注意什么？</summary>
+        <div class="faq-body">涉及口述与私人空间的拍摄，需取得受访者的明确同意，并确认影像的使用范围。平台会在上线前复核授权材料，请勿提交未经许可的素材。</div>
+      </details>
+      <details class="faq">
+        <summary>可以在其他平台同步发布吗？</summary>
+        <div class="faq-body">可以。我们主张正版与原创，欢迎多平台传播，但需在发布时注明首发来源，并遵守双方的授权约定。若涉及独家企划，会在协议中单独说明。</div>
+      </details>
+      <details class="faq">
+        <summary>如何参与线下放映与工作坊？</summary>
+        <div class="faq-body">关注「企业动态」栏目的报名通知即可。活动名额有限，社区活跃创作者与投稿作者享有优先报名权，具体规则以每期通知为准。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 联系 / 投稿 -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:26px">
+      <div class="t">
+        <span class="sec-kicker">CONTACT / 联系与投稿</span>
+        <h2>把你的影像交给我们，一起放进档案里</h2>
+        <p style="color:#b7ac96">无论你拍的是老宅、手艺、街巷，还是一段家族往事，只要足够真实，我们都愿意认真看完。</p>
+      </div>
+    </div>
+    <div class="contact-grid">
+      <article class="ct-card">
+        <h3>投稿作品</h3>
+        <p>提交作品信息与素材链接，附一段两百字以内的拍摄说明。审核通过后安排上线与署名。</p>
+        <button class="btn btn-gold" type="button" data-open="submit">打开投稿表单</button>
+      </article>
+      <article class="ct-card">
+        <h3>商务与共创</h3>
+        <p>品牌合作、场地支持、机构联合企划请联系内容合作组，我们会在两个工作日内回复。</p>
+        <button class="btn btn-ghost" type="button" data-open="report" style="color:#f0e6d2;border-color:rgba(217,178,106,.5)">发起合作咨询</button>
+      </article>
+      <article class="ct-card">
+        <h3>分享这份档案</h3>
+        <p>把页面分享给同样关心老建筑与家族记忆的朋友，让更多人加入这场长期的记录。</p>
+        <button class="btn btn-ghost" type="button" data-open="share" style="color:#f0e6d2;border-color:rgba(217,178,106,.5)">分享 / 复制链接</button>
+      </article>
+    </div>
+    <div class="ct-actions">
+      <span class="ct-note">内容合作邮箱：<b>archive@rikawatsubaki.cn</b></span>
+      <span class="ct-note">工作时间：<b>周一至周五 10:00–18:00</b></span>
+      <span class="ct-note">收录标准：<b>原创 · 正版 · 同期声</b></span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="logo" style="margin-bottom:6px">
+          <span class="logo-mark" aria-hidden="true"></span>
+          <span class="logo-txt">
+            <strong style="color:#f3ead7">没落贵族琉璃川椿</strong>
+            <span style="color:#a87c2f">RU RIKAWA TSUBAKI</span>
+          </span>
+        </div>
+        <p>没落贵族琉璃川椿官方网站。以原创高清影像记录旧宅、手艺与家族记忆，持续运营开放的创作者内容生态，坚持正版与品质，服务每一位愿意慢下来观看的人。</p>
+      </div>
+      <div class="foot-col">
+        <h4>内容</h4>
+        <a href="#focus">焦点影像</a>
+        <a href="#videos">热门内容</a>
+        <a href="#special">品牌企划</a>
+        <a href="#wall">影像墙</a>
+      </div>
+      <div class="foot-col">
+        <h4>社区</h4>
+        <a href="#creators">创作者矩阵</a>
+        <a href="#reviews">社区之声</a>
+        <a href="#inspire">创作灵感</a>
+        <a href="#contact">投稿入口</a>
+      </div>
+      <div class="foot-col">
+        <h4>关于</h4>
+        <a href="#story">品牌故事</a>
+        <a href="#news">企业动态</a>
+        <a href="#news">常见问题</a>
+        <span>联系：archive@rikawatsubaki.cn</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2024 没落贵族琉璃川椿 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创或已获授权 · 备案号占位：京ICP备00000000号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<!-- 通用弹窗 -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-close" type="button" data-close aria-label="关闭弹窗">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ===== 工具 ===== */
+  var toastEl = document.getElementById('toast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2400);
+  }
+
+  var fb = document.getElementById('searchFeedback');
+  var fbTimer = null;
+  function feedback(msg){
+    fb.textContent = msg;
+    fb.classList.add('show');
+    clearTimeout(fbTimer);
+    fbTimer = setTimeout(function(){ fb.classList.remove('show'); }, 2600);
+  }
+
+  /* ===== 移动端导航 ===== */
+  var nav = document.getElementById('mainNav');
+  var toggle = document.getElementById('menuToggle');
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.textContent = open ? '×' : '☰';
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      toggle.textContent = '☰';
+    }
+  });
+
+  /* ===== 搜索反馈 ===== */
+  var searchForm = document.getElementById('searchForm');
+  var searchInput = document.getElementById('searchInput');
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = searchInput.value.trim();
+    if(!q){
+      feedback('请输入内容标题、主题或创作者名称');
+      return;
+    }
+    var cards = document.querySelectorAll('#videoGrid .v-card');
+    var hit = 0;
+    cards.forEach(function(card){
+      var txt = card.innerText + ' ' + (card.getAttribute('data-keywords') || '');
+      var match = txt.indexOf(q) > -1;
+      card.style.display = match ? '' : 'none';
+      if(match) hit++;
+    });
+    var nums = document.querySelectorAll('.hero-stats .stat b');
+    // 恢复数字显示
+    document.querySelectorAll('.hero-stats .stat b').forEach(function(b){
+      if(b.dataset.done !== '1'){ b.textContent = b.dataset.count; b.dataset.done = '1'; }
+    });
+    if(hit > 0){
+      feedback('找到 ' + hit + ' 条与「' + q + '」相关的内容，已为你筛选');
+      document.getElementById('videos').scrollIntoView({behavior:'smooth'});
+    }else{
+      cards.forEach(function(card){ card.style.display = ''; });
+      feedback('暂无与「' + q + '」直接匹配的内容，试试「修复」「访谈」「城市」');
+    }
+  });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){
+      document.querySelectorAll('#videoGrid .v-card').forEach(function(c){ c.style.display = ''; });
+    }
+  });
+
+  /* ===== 点赞 ===== */
+  document.querySelectorAll('.like-btn').forEach(function(btn){
+    var base = parseInt(btn.getAttribute('data-likes'), 10) || 0;
+    btn.textContent = '☆ ' + base;
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('on');
+      var num = on ? base + 1 : base;
+      btn.textContent = (on ? '★ ' : '☆ ') + num;
+      toast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+    });
+  });
+
+  /* ===== 收藏 ===== */
+  document.querySelectorAll('.fav-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('on');
+      btn.textContent = on ? '♥' : '♡';
+      if(on){ btn.style.color = '#8c4a2f'; } else { btn.style.color = ''; }
+      toast(on ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+    });
+  });
+
+  /* ===== 弹窗系统 ===== */
+  var modal = document.getElementById('modal');
+  var modalContent = document.getElementById('modalContent');
+  var lastFocus = null;
+
+  function openModal(html){
+    lastFocus = document.activeElement;
+    modalContent.innerHTML = html;
+    modal.classList.add('show');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    var first = modal.querySelector('input, textarea, button');
+    if(first) first.focus();
+  }
+  function closeModal(){
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  modal.addEventListener('click', function(e){
+    if(e.target === modal || e.target.hasAttribute('data-close')) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('show')) closeModal();
+  });
+
+  /* 投稿弹窗 */
+  function submitModal(){
+    openModal(
+      '<h3>投稿入口</h3>' +
+      '<p class="m-sub">填写基本信息，我们会在七个工作日内完成初审并给出具体意见。</p>' +
+      '<form id="submitForm" class="form-row">' +
+        '<input type="text" name="title" placeholder="作品标题（必填）" required>' +
+        '<input type="text" name="author" placeholder="创作者署名（必填）" required>' +
+        '<select name="type" aria-label="作品类别">' +
+          '<option>旧宅与建筑记录</option>' +
+          '<option>手艺与修复工艺</option>' +
+          '<option>家族记忆与口述</option>' +
+          '<option>城市探索与街巷</option>' +
+          '<option>生活方式与日常</option>' +
+        '</select>' +
+        '<textarea name="desc" placeholder="用两百字以内说明拍摄对象、时间与素材授权情况"></textarea>' +
+        '<div class="form-actions">' +
+          '<button class="btn btn-gold" type="submit">提交作品</button>' +
+          '<button class="btn btn-ghost" type="button" data-close>取消</button>' +
+        '</div>' +
+      '</form>'
+    );
+    var f = document.getElementById('submitForm');
+    f.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModal();
+      toast('作品信息已提交，感谢你的参与，我们会尽快联系你');
+    });
+  }
+
+  /* 咨询弹窗 */
+  function reportModal(){
+    openModal(
+      '<h3>合作与反馈</h3>' +
+      '<p class="m-sub">可用于商务合作、场地支持、内容纠错或其他建议，我们会逐条阅读。</p>' +
+      '<form id="reportForm" class="form-row">' +
+        '<input type="text" name="name" placeholder="称呼（必填）" required>' +
+        '<input type="email" name="mail" placeholder="联系邮箱（必填）" required>' +
+        '<textarea name="msg" placeholder="请简要描述你的合作需求或反馈内容" required></textarea>' +
+        '<div class="form-actions">' +
+          '<button class="btn btn-gold" type="submit">提交</button>' +
+          '<button class="btn btn-ghost" type="button" data-close>取消</button>' +
+        '</div>' +
+      '</form>'
+    );
+    var f = document.getElementById('reportForm');
+    f.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModal();
+      toast('已收到，你的信息已进入处理队列');
+    });
+  }
+
+  /* 分享弹窗 */
+  function shareModal(){
+    openModal(
+      '<h3>分享这份档案</h3>' +
+      '<p class="m-sub">选择一种方式把页面分享出去，或直接复制链接。</p>' +
+      '<div class="share-grid">' +
+        '<button type="button" data-share="wechat"><i>微</i>微信</button>' +
+        '<button type="button" data-share="weibo"><i>博</i>微博</button>' +
+        '<button type="button" data-share="qq"><i>Q</i>QQ</button>' +
+        '<button type="button" data-share="copy"><i>链</i>复制链接</button>' +
+        '<button type="button" data-share="mail"><i>邮</i>邮件</button>' +
+        '<button type="button" data-share="more"><i>更</i>更多</button>' +
+      '</div>'
+    );
+  }
+
+  /* 作者档案弹窗 */
+  document.querySelectorAll('.author-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-author');
+      var detail = btn.getAttribute('data-detail');
+      openModal(
+        '<h3>' + name + '</h3>' +
+        '<p class="m-sub">平台签约 / 共创创作者</p>' +
+        '<p style="font-size:14px;color:#544e44;line-height:1.9;margin-bottom:16px">' + detail + '</p>' +
+        '<p style="font-size:13px;color:#7a7365;line-height:1.85;margin-bottom:18px">作品以旧宅、手艺与在地生活为主，强调同期声与现场细节，持续更新中。可通过合作邮箱申请联合创作或转载授权。</p>' +
+        '<div class="form-actions">' +
+          '<button class="btn btn-gold" type="button" data-close>知道了</button>' +
+          '<button class="btn btn-ghost" type="button" id="copyAuthor">复制联系方式</button>' +
+        '</div>'
+      );
+      var cp = document.getElementById('copyAuthor');
+      if(cp){
+        cp.addEventListener('click', function(){
+          copyText('archive@rikawatsubaki.cn', '联系方式已复制');
+        });
+      }
+    });
+  });
+
+  /* 复制能力 */
+  function copyText(text, okMsg){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        toast(okMsg);
+      }).catch(function(){
+        fallbackCopy(text, okMsg);
+      });
+    }else{
+      fallbackCopy(text, okMsg);
+    }
+  }
+  function fallbackCopy(text, okMsg){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand('copy'); toast(okMsg); }
+    catch(e){ toast('复制失败，请手动选择链接'); }
+    document.body.removeChild(ta);
+  }
+
+  /* 弹窗内分享按钮事件委托 */
+  modal.addEventListener('click', function(e){
+    var b = e.target.closest ? e.target.closest('[data-share]') : null;
+    if(!b) return;
+    var type = b.getAttribute('data-share');
+    if(type === 'copy'){
+      copyText('没落贵族琉璃川椿 · 官方影像档案', '页面标题已复制，可粘贴分享');
+    }else if(type === 'more'){
+      toast('已生成分享摘要，可粘贴至任意社交平台');
+    }else{
+      toast('已复制分享内容，打开对应平台即可粘贴');
+    }
+  });
+
+  /* 入口按钮 */
+  document.getElementById('submitBtn').addEventListener('click', submitModal);
+  document.querySelectorAll('[data-open]').forEach(function(el){
+    el.addEventListener('click', function(){
+      var t = el.getAttribute('data-open');
+      if(t === 'submit') submitModal();
+      else if(t === 'report') reportModal();
+      else if(t === 'share') shareModal();
+    });
+  });
+
+  /* ===== 数字滚动 ===== */
+  var counted = false;
+  function countUp(){
+    if(counted) return;
+    var stats = document.querySelectorAll('.hero-stats .stat b');
+    if(!stats.length) return;
+    counted = true;
+    stats.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+      var start = performance.now();
+      var dur = 1200;
+      function step(now){
+        var p = Math.min((now - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased);
+        if(p < 1) requestAnimationFrame(step);
+        else { el.textContent = target; el.dataset.done = '1'; }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  setTimeout(countUp, 400);
+
+  /* ===== 回到顶部 ===== */
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 600) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ===== 卡片入场 ===== */
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.style.opacity = '1';
+          en.target.style.transform = 'translateY(0)';
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:.08});
+    document.querySelectorAll('.v-card, .sp-card, .c-card, .rev, .m-item').forEach(function(el){
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'opacity .6s ease, transform .6s ease';
+      io.observe(el);
+    });
+  }
+
+})();
+</script>
+</body>
+  </html>

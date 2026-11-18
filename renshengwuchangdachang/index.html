@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人生无常大肠包小肠 | 台湾小吃影像记录 | 品牌官网</title>
+<meta name="description" content="人生无常大肠包小肠官方网站，深耕台湾街头小吃影像的原创内容品牌，为美食创作者与老饕搭建高品质内容社区。">
+<meta name="keywords" content="人生无常大肠包小肠,官方网站,品牌,原创,社区,创作者,美食">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"人生无常大肠包小肠","description":"以台湾小吃为主题的原创影像内容品牌与社区。","slogan":"糯米肠包住香肠，也包住日子里的小确幸"}
+</script>
+<style>
+:root{
+  --amber:#e8892b;
+  --amber-deep:#c96b12;
+  --cream:#fdf6ea;
+  --paper:#fffdf8;
+  --ink:#2f2418;
+  --ink-soft:#6b5a45;
+  --line:#e8dcc7;
+  --green:#5f7a4a;
+  --red:#c0432c;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(86,60,25,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:128px}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--cream);color:var(--ink);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+h2{font-size:clamp(1.4rem,2.6vw,2rem);letter-spacing:.5px}
+h3{font-size:1.08rem;line-height:1.5}
+.section{padding:72px 0 20px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:30px;flex-wrap:wrap}
+.sec-head p{color:var(--ink-soft);font-size:.94rem;max-width:560px}
+.eyebrow{display:inline-block;font-size:.74rem;letter-spacing:3px;color:var(--amber-deep);font-weight:700;margin-bottom:6px}
+
+/* 吸顶区域 */
+.sticky-shell{position:sticky;top:0;z-index:60;box-shadow:0 6px 18px rgba(86,60,25,.06)}
+.announce{
+  background:linear-gradient(90deg,var(--amber-deep),var(--amber));
+  color:#fff;font-size:.84rem;
+  display:flex;align-items:center;gap:12px;
+  padding:8px 0;
+}
+.announce .wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.announce .tag{background:rgba(255,255,255,.22);border-radius:999px;padding:1px 10px;font-size:.72rem;letter-spacing:1px}
+.announce p{flex:1;min-width:220px;line-height:1.5}
+.announce a{border-bottom:1px dashed rgba(255,255,255,.7);white-space:nowrap}
+header.nav-bar{background:rgba(255,253,248,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;gap:28px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px;font-size:1.02rem;line-height:1.2}
+.logo .mark{
+  width:40px;height:40px;border-radius:13px;flex:none;
+  background:radial-gradient(circle at 30% 25%,#ffb45c,#c96b12 70%);
+  display:grid;place-items:center;color:#fff;font-size:.95rem;font-weight:900;
+  box-shadow:inset 0 -3px 8px rgba(0,0,0,.15);
+}
+.logo small{display:block;font-size:.66rem;color:var(--ink-soft);font-weight:500;letter-spacing:1.5px}
+nav.main-nav{margin-left:auto}
+nav.main-nav ul{display:flex;gap:24px;font-size:.92rem}
+nav.main-nav a{position:relative;padding:6px 0;color:var(--ink-soft);transition:.2s}
+nav.main-nav a:hover{color:var(--amber-deep)}
+nav.main-nav a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--amber);transition:.25s}
+nav.main-nav a:hover::after{width:100%}
+.nav-tools{display:flex;align-items:center;gap:10px}
+.search-box{display:flex;align-items:center;background:#f6ecdb;border:1px solid var(--line);border-radius:999px;padding:6px 6px 6px 14px;transition:.25s}
+.search-box:focus-within{box-shadow:0 0 0 3px rgba(232,137,43,.18);background:#fff}
+.search-box input{border:none;background:transparent;outline:none;width:150px;font-size:.86rem;color:var(--ink)}
+.search-box input::placeholder{color:#a99madjust}
+.search-box button{background:var(--amber);color:#fff;border-radius:999px;padding:5px 14px;font-size:.8rem}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;font-weight:600;font-size:.9rem;transition:.22s}
+.btn-primary{background:var(--amber);color:#fff;box-shadow:0 8px 18px rgba(232,137,43,.3)}
+.btn-primary:hover{background:var(--amber-deep);transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid var(--amber);color:var(--amber-deep)}
+.btn-ghost:hover{background:rgba(232,137,43,.1)}
+.menu-toggle{display:none;font-size:1.4rem;color:var(--ink)}
+
+/* 首屏 */
+.hero{padding:56px 0 30px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.28;letter-spacing:1px;margin-bottom:10px}
+.hero h1 em{font-style:normal;color:var(--amber-deep);position:relative}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:10px;background:rgba(232,137,43,.22);z-index:-1;border-radius:4px}
+.hero .lead{font-size:.95rem;color:var(--ink-soft);margin-bottom:18px}
+.hero .intro{font-size:.93rem;color:#4a3a29;margin-bottom:24px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-visual{position:relative}
+.hero-visual .main-shot{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff}
+.hero-badge{
+  position:absolute;left:-14px;bottom:26px;background:var(--green);color:#fff;
+  padding:10px 18px;border-radius:14px;font-size:.8rem;line-height:1.45;
+  box-shadow:0 10px 22px rgba(0,0,0,.16);max-width:180px;
+}
+.hero-badge strong{display:block;font-size:1.15rem}
+.hero-mini{position:absolute;right:-12px;top:-16px;width:112px;border-radius:16px;overflow:hidden;border:4px solid #fff;box-shadow:var(--shadow)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.stat b{display:block;font-size:1.5rem;color:var(--amber-deep);letter-spacing:.5px}
+.stat span{font-size:.78rem;color:var(--ink-soft)}
+
+/* 通用卡片 */
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#eadfca}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .thumb img{transform:scale(1.045)}
+.thumb .play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.86);
+  display:grid;place-items:center;color:var(--amber-deep);font-size:1rem;
+  box-shadow:0 6px 18px rgba(0,0,0,.2);opacity:0;transition:.25s;
+}
+.card:hover .thumb .play{opacity:1}
+.thumb .badge{
+  position:absolute;left:12px;top:12px;background:rgba(47,36,24,.78);color:#fff;
+  font-size:.7rem;padding:3px 10px;border-radius:999px;letter-spacing:1px;backdrop-filter:blur(4px);
+}
+.thumb .dur{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.62);color:#fff;font-size:.7rem;padding:2px 8px;border-radius:6px}
+.card-body{padding:16px 18px 18px}
+.card-body h3{margin-bottom:8px}
+.card-body p{font-size:.85rem;color:var(--ink-soft);margin-bottom:12px}
+.meta-row{display:flex;align-items:center;gap:10px;font-size:.76rem;color:#8a765e;flex-wrap:wrap}
+.avatar-sm{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:.72rem;font-weight:700;flex:none}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.tag-pill{font-size:.7rem;background:#f5e9d6;color:var(--amber-deep);padding:2px 10px;border-radius:999px}
+.card-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px dashed var(--line);padding-top:10px;margin-top:10px;font-size:.78rem;color:#8a765e}
+.actions{display:flex;gap:14px}
+.actions button{display:flex;align-items:center;gap:4px;color:#8a765e;transition:.2s;font-size:.78rem}
+.actions button:hover{color:var(--amber-deep)}
+.actions button.on{color:var(--red)}
+.actions button.on .ico{transform:scale(1.18)}
+
+/* 焦点两列 */
+.focus-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:24px}
+.focus-side{display:flex;flex-direction:column;gap:16px}
+.side-item{display:flex;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:10px;transition:.22s}
+.side-item:hover{background:#fff;box-shadow:var(--shadow);transform:translateX(4px)}
+.side-item .mini{width:110px;flex:none;aspect-ratio:16/10;border-radius:10px;overflow:hidden}
+.side-item .mini img{width:100%;height:100%;object-fit:cover}
+.side-item h3{font-size:.9rem;margin-bottom:3px}
+.side-item span{font-size:.74rem;color:#8a765e}
+.big-card .card-body{padding:20px 22px 22px}
+.big-card .card-body h3{font-size:1.25rem}
+
+/* 视频流瀑布 */
+.flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+
+/* 专题 */
+.topic-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.topic{position:relative;border-radius:20px;overflow:hidden;min-height:230px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;padding:22px;box-shadow:var(--shadow)}
+.topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(30,20,8,.82));z-index:1}
+.topic>*{position:relative;z-index:2}
+.topic h3{margin-bottom:6px;font-size:1.05rem}
+.topic p{font-size:.82rem;opacity:.88;margin-bottom:10px}
+.topic .state{font-size:.72rem;background:rgba(255,255,255,.2);padding:3px 10px;border-radius:999px;align-self:flex-start;backdrop-filter:blur(4px)}
+
+/* 创作者 */
+.makers{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.maker{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center;transition:.25s}
+.maker:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#f0c894}
+.maker .av{width:72px;height:72px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:1.3rem;box-shadow:0 8px 18px rgba(0,0,0,.12)}
+.maker h3{font-size:1rem;margin-bottom:2px}
+.maker .role{font-size:.76rem;color:var(--amber-deep);margin-bottom:8px}
+.maker p{font-size:.8rem;color:var(--ink-soft);margin-bottom:12px;min-height:52px}
+.maker .nums{display:flex;justify-content:center;gap:16px;font-size:.74rem;color:#8a765e;border-top:1px dashed var(--line);padding-top:10px}
+.maker .nums b{display:block;color:var(--ink);font-size:.92rem}
+.maker .see{margin-top:12px;font-size:.78rem;color:var(--amber-deep)}
+
+/* 故事随笔 */
+.story-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.story{background:var(--paper);border-radius:18px;border:1px solid var(--line);padding:26px 28px;position:relative;overflow:hidden}
+.story::before{content:"“";position:absolute;right:18px;top:-6px;font-size:6rem;color:#f2e3ca;font-family:Georgia,serif;line-height:1}
+.story h3{margin-bottom:10px;color:var(--amber-deep)}
+.story p{font-size:.88rem;color:#54432f;margin-bottom:10px}
+.story .sign{font-size:.78rem;color:#9a876d}
+
+/* 作品墙 */
+.wall{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:110px;gap:14px}
+.wall figure{position:relative;border-radius:14px;overflow:hidden;margin:0}
+.wall img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.wall figure:hover img{transform:scale(1.06)}
+.wall figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:20px 12px 8px;color:#fff;font-size:.74rem;
+  background:linear-gradient(180deg,transparent,rgba(0,0,0,.6));
+}
+.w-big{grid-column:span 4;grid-row:span 2}
+.w-mid{grid-column:span 4;grid-row:span 1}
+.w-sm{grid-column:span 2;grid-row:span 1}
+.w-tall{grid-column:span 2;grid-row:span 2}
+
+/* 评价 */
+.comments{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.comment{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.comment .top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.comment .top b{font-size:.86rem}
+.comment .top span{font-size:.72rem;color:#a08c72}
+.comment p{font-size:.84rem;color:#54432f}
+.stars{color:var(--amber);font-size:.8rem;margin-top:8px;letter-spacing:2px}
+
+/* 灵感工具 */
+.tools{background:linear-gradient(135deg,#fff7e9,#fbeed6);border:1px solid #f0dcbb;border-radius:24px;padding:38px 40px;display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center}
+.tools h2{margin-bottom:10px}
+.tools p{font-size:.9rem;color:var(--ink-soft);margin-bottom:18px}
+.tool-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tool{background:#fff;border-radius:14px;padding:14px 16px;border:1px solid #f1e1c6}
+.tool b{display:block;font-size:.88rem;margin-bottom:2px;color:var(--amber-deep)}
+.tool span{font-size:.76rem;color:#8a765e}
+.tool-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+
+/* 动态 */
+.timeline{border-left:2px solid #efdfc6;margin-left:10px;padding-left:26px;display:flex;flex-direction:column;gap:22px}
+.tl-item{position:relative}
+.tl-item::before{content:"";position:absolute;left:-33px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--amber);border:3px solid #fff;box-shadow:0 0 0 1px #f0c894}
+.tl-item time{font-size:.76rem;color:var(--amber-deep);font-weight:600}
+.tl-item h3{font-size:.96rem;margin:2px 0 4px}
+.tl-item p{font-size:.83rem;color:var(--ink-soft)}
+
+/* 合作 */
+.brands{display:flex;flex-wrap:wrap;gap:12px}
+.brand-chip{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 22px;font-size:.86rem;color:#6b5a45;font-weight:600;letter-spacing:1px;transition:.2s}
+.brand-chip:hover{color:var(--amber-deep);border-color:#f0c894;background:#fff}
+
+/* FAQ */
+.faq{max-width:860px;margin:0 auto}
+details{background:var(--paper);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;padding:0 20px;transition:.2s}
+details[open]{border-color:#f0c894;box-shadow:0 8px 20px rgba(86,60,25,.07)}
+summary{cursor:pointer;padding:16px 0;font-weight:600;font-size:.94rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.2rem;color:var(--amber-deep);transition:.25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{font-size:.86rem;color:var(--ink-soft);padding-bottom:16px;border-top:1px dashed var(--line);padding-top:12px}
+
+/* 联系 */
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.contact-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;text-align:center}
+.contact-card .ico{width:48px;height:48px;border-radius:14px;background:#f7ead4;color:var(--amber-deep);display:grid;place-items:center;font-size:1.2rem;margin:0 auto 12px}
+.contact-card h3{margin-bottom:4px}
+.contact-card p{font-size:.82rem;color:var(--ink-soft)}
+.contact-card button{margin-top:12px;font-size:.82rem;color:var(--amber-deep);font-weight:600}
+
+/* 页脚 */
+footer{background:#2b2117;color:#d9cbb6;margin-top:70px;padding:54px 0 26px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:32px;margin-bottom:34px}
+footer h4{color:#fff;font-size:.94rem;margin-bottom:12px;letter-spacing:1px}
+footer p,footer li,footer a{font-size:.82rem;line-height:2;color:#b7a78f}
+footer a:hover{color:#f0b96a}
+.foot-brand .logo{color:#fff;margin-bottom:12px}
+.foot-brand small{color:#9d8d76}
+.foot-bottom{border-top:1px solid #463829;padding-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.76rem;color:#9d8d76}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:var(--amber);color:#fff;display:grid;place-items:center;font-size:1.1rem;
+  box-shadow:0 10px 24px rgba(232,137,43,.4);opacity:0;pointer-events:none;transition:.3s;z-index:80;
+}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{background:var(--amber-deep);transform:translateY(-3px)}
+
+/* Toast */
+#toast{
+  position:fixed;left:50%;bottom:40px;transform:translate(-50%,20px);
+  background:#2b2117;color:#fff;padding:11px 24px;border-radius:999px;font-size:.84rem;
+  opacity:0;pointer-events:none;transition:.3s;z-index:120;box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* 弹窗 */
+.modal-mask{position:fixed;inset:0;background:rgba(43,33,23,.55);backdrop-filter:blur(3px);display:none;place-items:center;z-index:130;padding:20px}
+.modal-mask.show{display:grid}
+.modal{background:var(--paper);border-radius:22px;max-width:460px;width:100%;padding:30px 32px;position:relative;animation:pop .25s ease}
+@keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
+.modal h3{margin-bottom:6px;font-size:1.15rem}
+.modal p{font-size:.86rem;color:var(--ink-soft);margin-bottom:16px}
+.modal input,.modal textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit;font-size:.88rem;margin-bottom:12px;background:#fffdf8;outline:none}
+.modal input:focus,.modal textarea:focus{border-color:var(--amber)}
+.modal .close{position:absolute;right:16px;top:12px;font-size:1.3rem;color:#9a876d}
+.share-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:8px}
+.share-row button{padding:12px 0;background:#f7ead4;border-radius:12px;font-size:.84rem;color:var(--amber-deep);font-weight:600;transition:.2s}
+.share-row button:hover{background:var(--amber);color:#fff}
+
+/* 搜索提示 */
+#searchHint{font-size:.8rem;color:var(--amber-deep);margin-top:-6px;min-height:1.1em;display:block;text-align:right}
+
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-visual{order:-1}
+  .focus-grid{grid-template-columns:1fr}
+  .flow-grid{grid-template-columns:repeat(2,1fr)}
+  .topic-row{grid-template-columns:repeat(2,1fr)}
+  .makers{grid-template-columns:repeat(2,1fr)}
+  .comments{grid-template-columns:repeat(2,1fr)}
+  .tools{grid-template-columns:1fr;padding:28px}
+  .contact{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .story-grid{grid-template-columns:1fr}
+  .wall{grid-auto-rows:96px}
+}
+@media(max-width:720px){
+  nav.main-nav{
+    position:absolute;left:0;right:0;top:100%;background:var(--paper);
+    border-bottom:1px solid var(--line);display:none;padding:10px 0;box-shadow:0 16px 24px rgba(0,0,0,.08);
+  }
+  nav.main-nav.open{display:block}
+  nav.main-nav ul{flex-direction:column;gap:0}
+  nav.main-nav li{border-bottom:1px solid #f4ebda}
+  nav.main-nav a{display:block;padding:13px 24px}
+  .nav-inner{position:relative;flex-wrap:wrap}
+  .menu-toggle{display:block;margin-left:auto}
+  .nav-tools{order:3;width:100%;justify-content:space-between}
+  .search-box input{width:120px}
+  .flow-grid{grid-template-columns:1fr}
+  .topic-row{grid-template-columns:1fr}
+  .makers{grid-template-columns:1fr}
+  .comments{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .wall{grid-template-columns:repeat(6,1fr)}
+  .w-big{grid-column:span 6;grid-row:span 2}
+  .w-mid{grid-column:span 3}
+  .w-sm{grid-column:span 3}
+  .w-tall{grid-column:span 3;grid-row:span 2}
+  .tool-list{grid-template-columns:1fr}
+  .side-item .mini{width:88px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-shell">
+  <div class="announce">
+    <div class="wrap">
+      <span class="tag">今日上新</span>
+      <p>《夜市三十摊》第 12 集上线，糯米肠灌制流程全记录；<a href="#flow">前往内容区</a> · 春季「肠衣与火候」创作挑战报名中</p>
+      <a href="#contact">内容合作</a>
+    </div>
+  </div>
+
+  <header class="nav-bar">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#top">
+        <span class="mark">肠</span>
+        <span>人生无常大肠包小肠<small>OFFICIAL SITE</small></span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#top">首页</a></li>
+          <li><a href="#focus">焦点影像</a></li>
+          <li><a href="#flow">视频流</a></li>
+          <li><a href="#topic">专题企划</a></li>
+          <li><a href="#makers">创作者</a></li>
+          <li><a href="#news">企业动态</a></li>
+          <li><a href="#faq">帮助</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </nav>
+      <div class="nav-tools">
+        <div class="search-box">
+          <input type="search" id="searchInput" placeholder="搜糯米肠、炭烤、夜市…" aria-label="站内搜索">
+          <button type="button" id="searchBtn">搜索</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="展开导航">☰</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">BRAND · 台湾小吃影像</span>
+        <h1>人生无常<em>大肠包小肠</em></h1>
+        <p class="lead">糯米肠包住炭烤香肠，也包住一天里那些说不准的小确幸。</p>
+        <p class="intro">
+          作为深耕台湾街头小吃影像的原创品牌，「人生无常大肠包小肠」官方网站持续记录一根香肠从灌制、炭烤到被递到手上的全部过程。我们与在地摊主、家庭厨房和城市夜市同行，用高品质影像保存手艺的细节，也保存那些临时起意的相遇。平台坚持正版授权与专业制作，为创作者提供上传、展示与成长的社区，为企业与品牌搭建可被信赖的内容生态。我们相信：味道会变，火候会变，而认真记录这件事本身，值得被长期坚持。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#flow">进入视频流 →</a>
+          <a class="btn btn-ghost" href="#makers">认识创作者</a>
+          <button class="btn btn-ghost" data-modal="shareModal">分享官网</button>
+        </div>
+        <div class="stats">
+          <div class="stat"><b data-count="1280">1280+</b><span>原创影像条目</span></div>
+          <div class="stat"><b data-count="76">76 位</b><span>签约与入驻创作者</span></div>
+          <div class="stat"><b data-count="9">9 年</b><span>持续运营与深耕</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="main-shot">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f9c46b'/%3E%3Cstop offset='1' stop-color='%23c0432c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g1)'/%3E%3Ccircle cx='640' cy='110' r='130' fill='%23ffdca8' opacity='0.5'/%3E%3Crect x='90' y='300' width='620' height='34' rx='17' fill='%23fdf0d5'/%3E%3Crect x='130' y='250' width='150' height='60' rx='30' fill='%23372a1c'/%3E%3Crect x='300' y='250' width='150' height='60' rx='30' fill='%23a8542a'/%3E%3Crect x='470' y='250' width='150' height='60' rx='30' fill='%23372a1c'/%3E%3Cpath d='M130 250 q75 -46 150 0' stroke='%23f6d9a5' stroke-width='9' fill='none'/%3E%3Cpath d='M470 250 q75 -46 150 0' stroke='%23f6d9a5' stroke-width='9' fill='none'/%3E%3Ccircle cx='300' cy='345' r='12' fill='%23fff3dd'/%3E%3Ccircle cx='390' cy='345' r='12' fill='%23fff3dd'/%3E%3Ccircle cx='480' cy='345' r='12' fill='%23fff3dd'/%3E%3Ctext x='60' y='90' fill='%23fff' font-size='34' font-family='sans-serif' font-weight='bold'%3E%E5%A4%A7%E8%82%A0%E5%8C%85%E5%B0%8F%E8%82%A0%3C/text%3E%3Ctext x='60' y='132' fill='%23ffe8c2' font-size='18' font-family='sans-serif'%3E%E7%83%A4%E9%A6%99%E8%82%A0%C2%B7%E7%B3%AF%E7%B1%B3%E8%82%A0%C2%B7%E8%87%AA%E7%84%B6%E8%82%A0%E8%A1%A3%3C/text%3E%3C/svg%3E" alt="首屏主视觉：炭烤大肠包小肠与糯米肠切片特写">
+        </div>
+        <div class="hero-badge"><strong>今日火候</strong>炭火 12 分钟翻转 7 次，肠衣微微起泡即可出炉</div>
+        <div class="hero-mini">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%235f7a4a'/%3E%3Ccircle cx='100' cy='90' r='46' fill='%23e8b95f'/%3E%3Ccircle cx='100' cy='90' r='26' fill='%23a8542a'/%3E%3Cpath d='M58 140 h84' stroke='%23fdf6ea' stroke-width='8' stroke-linecap='round'/%3E%3Ctext x='100' y='178' text-anchor='middle' fill='%23fdf6ea' font-size='15' font-family='sans-serif'%3E%E6%96%B0%E9%B2%9C%E7%8E%B0%E7%83%A4%3C/text%3E%3C/svg%3E" alt="小图：新鲜现烤香肠圆形标识">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="section" id="focus">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">FOCUS · 焦点影像</span>
+          <h2>本周主推：一根香肠的完整旅程</h2>
+        </div>
+        <p>从猪后腿肉的肥瘦配比，到肠衣的清洗晾晒，再到炭炉前的最后三分钟。我们用长镜头与微距，把常被忽略的工序一一摊开。</p>
+      </div>
+      <div class="focus-grid">
+        <article class="card big-card">
+          <div class="thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffb457'/%3E%3Cstop offset='1' stop-color='%23a8452a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23a)'/%3E%3Cg opacity='0.9'%3E%3Crect x='120' y='200' width='560' height='26' rx='13' fill='%23372a1c'/%3E%3Crect x='160' y='160' width='140' height='40' rx='20' fill='%23c97b3c'/%3E%3Crect x='330' y='160' width='140' height='40' rx='20' fill='%23372a1c'/%3E%3Crect x='500' y='160' width='140' height='40' rx='20' fill='%23c97b3c'/%3E%3C/g%3E%3Cpath d='M120 300 q280 120 560 0' stroke='%23ffdda8' stroke-width='6' fill='none' opacity='0.6'/%3E%3Ctext x='60' y='80' fill='%23fff' font-size='30' font-family='sans-serif' font-weight='bold'%3E%E4%BB%8E%E7%81%8C%E5%88%B6%E5%88%B0%E7%82%AD%E7%83%A4%EF%BC%9A%E4%B8%80%E6%A0%B9%E9%A6%99%E8%82%A0%E7%9A%84%E4%B8%89%E5%8D%81%E5%85%AD%E5%B0%8F%E6%97%B6%3C/text%3E%3C/svg%3E" alt="焦点视频封面：从灌制到炭烤一根香肠的三十六小时">
+            <span class="badge">品牌出品</span>
+            <span class="dur">18:42</span>
+            <span class="play">▶</span>
+          </div>
+          <div class="card-body">
+            <h3>从灌制到炭烤：一根香肠的三十六小时</h3>
+            <p>凌晨四点的备料间，猪后腿肉被切成指节大小的块，肥瘦三七分是摊主三十年的手感。镜头跟着糯米浸水、肠衣翻洗、灌制扎孔，再一路走到夜市亮灯的时刻。这一集我们几乎没有旁白，只留下刀落案板、炭火噼啪与油滴落下的声音。</p>
+            <div class="meta-row">
+              <span class="avatar-sm" style="background:#c96b12">阿</span>
+              <span>阿源伯的灶脚</span><span>·</span><span>2 天前</span>
+            </div>
+            <div class="card-foot">
+              <div class="actions">
+                <button class="like-btn"><span class="ico">👍</span><span class="num">1428</span></button>
+                <button class="fav-btn"><span class="ico">♡</span><span>收藏</span></button>
+                <button data-modal="shareModal"><span class="ico">↗</span><span>分享</span></button>
+              </div>
+              <span>原创 · 高清</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="focus-side">
+          <a class="side-item" href="#flow">
+            <div class="mini">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Crect width='220' height='140' fill='%235f7a4a'/%3E%3Ccircle cx='60' cy='52' r='26' fill='%23f0c26a'/%3E%3Ccircle cx='130' cy='52' r='26' fill='%23e88b3a'/%3E%3Crect x='30' y='96' width='160' height='12' rx='6' fill='%23fdf6ea' opacity='0.8'/%3E%3C/svg%3E" alt="小卡封面：家庭厨房里的糯米肠蒸制过程">
+            </div>
+            <div>
+              <h3>家庭厨房版：蒸糯米肠的四个关键点</h3>
+              <span>教程干货 · 09:15</span>
+            </div>
+          </a>
+          <a class="side-item" href="#flow">
+            <div class="mini">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Crect width='220' height='140' fill='%232f2418'/%3E%3Ccircle cx='110' cy='70' r='42' fill='none' stroke='%23e8892b' stroke-width='8'/%3E%3Ccircle cx='110' cy='70' r='16' fill='%23e8892b'/%3E%3C/svg%3E" alt="小卡封面：深夜炭火与香肠的炉前特写">
+            </div>
+            <div>
+              <h3>夜市亮灯前：炭火师傅的十分钟准备</h3>
+              <span>日常记录 · 06:30</span>
+            </div>
+          </a>
+          <a class="side-item" href="#flow">
+            <div class="mini">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Crect width='220' height='140' fill='%23c0432c'/%3E%3Cpath d='M30 100 L80 40 L120 100 Z' fill='%23f9c46b'/%3E%3Ccircle cx='170' cy='60' r='20' fill='%23fff3dd' opacity='0.85'/%3E%3C/svg%3E" alt="小卡封面：在地食材市集与肠衣采购纪实">
+            </div>
+            <div>
+              <h3>在地食材地图：肠衣与糯米从哪来</h3>
+              <span>行业观察 · 12:08</span>
+            </div>
+          </a>
+          <a class="side-item" href="#flow">
+            <div class="mini">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 140'%3E%3Crect width='220' height='140' fill='%23eadfca'/%3E%3Crect x='40' y='40' width='60' height='60' rx='12' fill='%23a8542a'/%3E%3Crect x='120' y='40' width='60' height='60' rx='12' fill='%23e8b95f'/%3E%3C/svg%3E" alt="小卡封面：两位摊主对谈的肖像画面">
+            </div>
+            <div>
+              <h3>人物访谈：两代摊主的三次改方</h3>
+              <span>人物访谈 · 21:04</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频流 -->
+  <section class="section" id="flow">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">LIBRARY · 视频流</span>
+          <h2>持续更新的原创视频库</h2>
+        </div>
+        <p>平台所有内容均为原创或授权正版，支持高清播放与创作者署名。可按标签筛选，也可以在搜索框里直接输入你关心的摊位、食材或技法。</p>
+      </div>
+      <div class="tags" id="filterTags">
+        <button class="tag-pill on" data-filter="all" style="border:none;cursor:pointer;padding:4px 14px">全部</button>
+        <button class="tag-pill" data-filter="教程" style="border:none;cursor:pointer;padding:4px 14px">教程干货</button>
+        <button class="tag-pill" data-filter="夜市" style="border:none;cursor:pointer;padding:4px 14px">夜市探索</button>
+        <button class="tag-pill" data-filter="人物" style="border:none;cursor:pointer;padding:4px 14px">人物访谈</button>
+        <button class="tag-pill" data-filter="测评" style="border:none;cursor:pointer;padding:4px 14px">深度测评</button>
+      </div>
+
+      <div class="flow-grid" id="videoFlow">
+
+        <article class="card" data-tag="教程">
+          <div class="thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f3e0bd'/%3E%3Ccircle cx='500' cy='80' r='90' fill='%23e8892b' opacity='0.35'/%3E%3Crect x='80' y='200' width='360' height='22' rx='11' fill='%23a8542a'/%3E%3Crect x='110' y='166' width='90' height='34' rx='17' fill='%23372a1c'/%3E%3Crect x='230' y='166' width='90' height='34' rx='17' fill='%23c97b3c'/%3E%3Crect x='350' y='166' width='90' height='34' rx='17' fill='%23372a1c'/%3E%3Ctext x='60' y='70' fill='%236b5a45' font-size='22' font-family='sans-serif'%3E%E7%B3%AF%E7%B1%B3%E8%82%A0%E8%92%B8%E5%88%B6%3C/text%3E%3C/svg%3E" alt="视频封面：糯米肠蒸制的四个关键点">
+            <span class="badge">教程</span><span class="dur">09:15</span><span class="play">▶</span>
+          </div>
+          <div class="card-body">
+            <h3>糯米肠蒸制的四个关键点</h3>
+            <p>泡米时长、灌制松紧、扎孔密度、火候转小火，四个环节任何一个出错都会让口感发散。这期把失败案例也放进来了。</p>
+            <div class="meta-row"><span class="avatar-sm" style="background:#a8542a">米</span><span>米姐研究室</span><span>· 1.2 万播放</span></div>
+            <div class="card-foot">
+              <div class="actions">
+                <button class="like-btn"><span class="ico">👍</span><span class="num">386</span></button>
+                <button class="fav-btn"><span class="ico">♡</span><span>收藏</span></button>
+              </div>
+              <span>08:24 更新</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-tag="夜市">
+          <div class="thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232f2418'/%3E%3Cg fill='%23f9c46b'%3E%3Ccircle cx='90' cy='70' r='12'/%3E%3Ccircle cx='180' cy='50' r='8'/%3E%3Ccircle cx='290' cy='80' r='10'/%3E%3Ccircle cx='430' cy='46' r='9'/%3E%3Ccircle cx='540' cy='76' r='11'/%3E%3C/g%3E%3Crect x='60' y='250' width='520' height='16' rx='8' fill='%23e8892b' opacity='0.7'/%3E%3Crect x='130' y='188' width='70' height='62' rx='10' fill='%23c0432c'/%3E%3Crect x='250' y='188' width='70' height='62' rx='10' fill='%23e8b95f'/%3E%3Crect x='370' y='188' width='70' height='62' rx='10' fill='%23c0432c'/%3E%3Ctext x='60' y='140' fill='%23fdf6ea' font-size='22' font-family='sans-serif'%3E%E5%A4%9C%E5%B8%82%E4%BA%AE%E7%81%AF%E5%89%8D%3C/text%3E%3C/svg%3E" alt="视频封面：夜市亮灯前的炭火准备">
+            <span class="badge">夜市</span><span class="dur">06:30</span><span class="play">▶</span>
+          </div>
+          <div class="card-body">
+            <h3>夜市亮灯前：炭火师傅的十分钟</h3>
+            <p>炭要先烧透再铺平，铁网预热到滴水成珠。老师傅说，客人闻到香味走过来的时候，其实准备工作已经结束很久了。</p>
+            <div class="meta-row"><span class="avatar-sm" style="background:#5f7a4a">炭</span><span>炭火小分队</span><span>· 9800 播放</span></div>
+            <div class="card-foot">
+              <div class="actions">
+                <button class="like-btn"><span class="ico">👍</span><span class="num">271</span></button>
+                <button class="fav-btn"><span class="ico">♡</span><span>收藏</span></button>
+              </div>
+              <span>3 天前</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-tag="人物">
+          <div class="thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23566b8c'/%3E%3Ccircle cx='200' cy='170' r='70' fill='%23f2c9a0'/%3E%3Cpath d='M130 300 q70 -80 140 0' fill='%23fdf6ea' opacity='0.9'/%3E%3Ccircle cx='440' cy='160' r='62' fill='%23e8b98a'/%3E%3Cpath d='M380 300 q60 -76 120 0' fill='%23f7e6cc' opacity='0.9'/%3E%3Ctext x='60' y='70' fill='%23fdf6ea' font-size='22' font-family='sans-serif'%3E%E4%B8%A4%E4%BB%A3%E6%91%8A%E4%B8%BB%E5%AF%B9%E8%B0%88%3C/text%3E%3C/svg%3E" alt="视频封面：两代摊主对谈的肖像画面">
+            <span class="badge">访谈</span><span class="dur">21:04</span><span class="play">▶</span>
+          </div>
+          <div class="card-body">
+            <h3>两代摊主的三次改方</h3>
+            <p>父亲坚持用蒜泥配酱油膏，儿子加了花生粉和酸菜。三次改方，三次被老客人投诉，最后他们找到了折中的做法。</p>
+            <div class="meta-row"><span class="avatar-sm" style="background:#566b8c">访</span><span>镜头前的巷口</span><span>· 2.1 万播放</span></div>
+            <div class="card-foot">
+              <div class="actions">
+                <button class="like-btn"><span class="ico">👍</span><span class="num">648</span></button>
+                <button class="fav-btn"><span class="ico">♡</span><span>收藏</span></button>
+              </div>
+              <span>5 天前</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-tag="测评">
+          <div class="thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23fdf6ea'/%3E%3Crect x='70' y='110' width='150' height='150' rx='22' fill='%23e8892b'/%3E%3Crect x='245' y='110' width='150' height='150' rx='22' fill='%235f7a4a'/%3E%3Crect x='420' y='110' width='150' height='150' rx='22' fill='%23c0432c'/%3E%3Ctext x='70' y='80' fill='%236b5a45' font-size='22' font-family='sans-serif'%3E%E4%B8%89%E5%AE%B6%E6%91%8A%E4%BD%8D%E5%AF%B9%E6%AF%94%3C/text%3E%3C/svg%3E" alt="视频封面：三家摊位肠衣口感对比测评">
+            <span class="badge">测评</span><span class="dur">14:22</span><span class="play">▶</span>
+          </div>
+          <div class="card-body">
+            <h3>三家摊位肠衣口感横向测评</h3>
+            <p>同一街区、同一价位，肠衣的脆度、糯米的颗粒感和酱料咸度差异明显。我们用同一套评分表记录了六项指标。</p>
+            <div class="meta-row"><span class="avatar-sm" style="background:#c0432c">测</span><span>口感评测所</span><span>· 1.6 万播放</span></div>
+            <div class="card-foot">
+              <div class="actions">
+                <button class="like-btn"><span class="ico">👍</span><span class="num">512</span></button>
+                <button class="fav-btn"><span class="ico">♡</span><span>收藏</span></button>
+              </div>
+              <span>6 天前</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-tag="教程">
+          <div class="thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e9f0e2'/%3E%3Cpath d='M80 280 L200 120 L320 280 Z' fill='%235f7a4a' opacity='0.55'/%3E%3Cpath d='M300 280 L420 140 L540 280 Z' fill='%23a8542a' opacity='0.5'/%3E%3Ccircle cx='500' cy='90' r='44' fill='%23e8892b'/%3E%3Ctext x='60' y='70' fill='%233f5236' font-size='22' font-family='sans-serif'%3E%E9%85%8D%E6%96%B9%E5%85%AC%E5%BC%80%3C/text%3E%3C/svg%3E" alt="视频封面：家用灌肠工具与配方公开">
+            <span class="badge">配方</span><span class="dur">11:48</span><span class="play">▶</span>
+          </div>
+          <div class="card-body">
+            <h3>在家做灌肠：工具清单与配方公开</h3>
+            <p>不需要专业灌肠机，一个剪开的裱花袋加棉线就能完成。配方给了低盐版本，适合第一次尝试的家庭厨房。</p>
+            <div class="meta-row"><span class="avatar-sm" style="background:#5f7a4a">手</span><span>手作厨房日记</span><span>· 1.1 万播放</span></div>
+            <div class="card-foot">
+              <div class="actions">
+                <button class="like-btn"><span class="ico">👍</span><span class="num">403</span></button>
+                <button class="fav-btn"><span class="ico">♡</span><span>收藏</span></button>
+              </div>
+              <span>1 周前</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-tag="夜市">
+          <div class="thumb">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23c9d7e8'/%3E%3Crect x='0' y='220' width='640' height='140' fill='%23f4efe4'/%3E%3Crect x='90' y='140' width='120' height='120' fill='%23d98b52'/%3E%3Crect x='250' y='120' width='140' height='140' fill='%23b96a3a'/%3E%3Crect x='430' y='150' width='120' height='110' fill='%23e0a96d'/%3E%3Ctext x='60' y='70' fill='%23566b8c' font-size='22' font-family='sans-serif'%3E%E5%9F%8E%E5%B8%82%E6%8E%A2%E7%B4%A2%3C/text%3E%3C/svg%3E" alt="视频封面：城市巷口摊位的清晨探索">
+            <span class="badge">探索</span><span class="dur">08:56</span><span class="play">▶</span>
+          </div>
+          <div class="card-body">
+            <h3>巷口地图：六家开了二十年的老摊</h3>
+            <p>不看评分，只问邻居。我们沿着两条老街走了四公里，把居民口中“从小吃到大”的六家摊子标在了地图上。</p>
+            <div class="meta-row"><span class="avatar-sm" style="background:#566b8c">城</span><span>城市行走笔记</span><span>· 2.4 万播放</span></div>
+            <div class="card-foot">
+              <div class="actions">
+                <button class="like-btn"><span class="ico">👍</span><span class="num">730</span></button>
+                <button class="fav-btn"><span class="ico">♡</span><span>收藏</span></button>
+              </div>
+              <span>1 周前</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题 -->
+  <section class="section" id="topic">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">SERIES · 专题企划</span>
+          <h2>正在进行的三组长期记录</h2>
+        </div>
+        <p>专题由编辑部与入驻创作者共同推进，更新节奏稳定，欢迎在评论区留下你希望被记录的摊位或人物。</p>
+      </div>
+      <div class="topic-row">
+        <article class="topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Crect width='600' height='420' fill='%23a8452a'/%3E%3Ccircle cx='480' cy='90' r='130' fill='%23e8b95f' opacity='0.4'/%3E%3Crect x='80' y='250' width='440' height='26' rx='13' fill='%23fdf0d5'/%3E%3Crect x='130' y='206' width='120' height='44' rx='22' fill='%23372a1c'/%3E%3Crect x='290' y='206' width='120' height='44' rx='22' fill='%23c97b3c'/%3E%3C/svg%3E" alt="专题封面：夜市三十摊系列主视觉">
+          <span class="state">更新至 12 集</span>
+          <h3>夜市三十摊</h3>
+          <p>走访三十个摊位，记录同一座城市里不同的火候与坚持。</p>
+        </article>
+        <article class="topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Crect width='600' height='420' fill='%235f7a4a'/%3E%3Cpath d='M0 330 q150 -120 300 0 t300 0 v90 H0 Z' fill='%23fdf6ea' opacity='0.85'/%3E%3Ccircle cx='150' cy='150' r='70' fill='%23e8b95f'/%3E%3Ccircle cx='420' cy='150' r='56' fill='%23c0432c' opacity='0.8'/%3E%3C/svg%3E" alt="专题封面：家庭厨房复刻企划主视觉">
+          <span class="state">每周三更新</span>
+          <h3>把摊位搬回家</h3>
+          <p>还原十二道夜市小吃的家庭版本，配方、火候与失败复盘全公开。</p>
+        </article>
+        <article class="topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 420'%3E%3Crect width='600' height='420' fill='%23566b8c'/%3E%3Ccircle cx='180' cy='180' r='64' fill='%23f2c9a0'/%3E%3Ccircle cx='400' cy='180' r='64' fill='%23e8b98a'/%3E%3Cpath d='M90 340 q90 -90 180 0' fill='%23fdf6ea' opacity='0.8'/%3E%3Cpath d='M310 340 q90 -90 180 0' fill='%23fdf6ea' opacity='0.8'/%3E%3C/svg%3E" alt="专题封面：手艺人口述史系列主视觉">
+          <span class="state">已上线 6 集</span>
+          <h3>手艺人口述史</h3>
+          <p>坐在摊位后厨的塑料凳上，听他们把三十年的变化慢慢讲完。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="section" id="makers">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">CREATORS · 创作者矩阵</span>
+          <h2>与我们共同记录的人</h2>
+        </div>
+        <p>平台为入驻创作者提供拍摄支持、正版素材库与分发协助。如果你也在记录身边的食物，欢迎通过投稿入口联系我们。</p>
+      </div>
+      <div class="makers">
+        <article class="maker">
+          <div class="av" style="background:#c96b12">阿</div>
+          <h3>阿源伯的灶脚</h3>
+          <div class="role">炭烤工艺 · 摊主</div>
+          <p>在夜市烤了三十一年香肠，镜头里话不多，手上的动作从不含糊。</p>
+          <div class="nums"><div><b>86</b>作品</div><div><b>3.4万</b>关注</div></div>
+          <button class="see" data-maker="阿源伯的灶脚|炭烤工艺与肠衣处理的活字典，坚持用最传统的炭火与当天的温体猪肉。|86 部原创影像·参与《夜市三十摊》全季拍摄">查看档案</button>
+        </article>
+        <article class="maker">
+          <div class="av" style="background:#5f7a4a">米</div>
+          <h3>米姐研究室</h3>
+          <div class="role">配方拆解 · 教程</div>
+          <p>食品科学背景，专做家庭厨房可复刻的低门槛配方，失败案例也照实讲。</p>
+          <div class="nums"><div><b>52</b>作品</div><div><b>2.1万</b>关注</div></div>
+          <button class="see" data-maker="米姐研究室|用实验思路拆解小吃配方，给出克数与温度区间，让家庭厨房也能稳定复现。|52 部教程影像·糯米饭含水率系列主创">查看档案</button>
+        </article>
+        <article class="maker">
+          <div class="av" style="background:#566b8c">城</div>
+          <h3>城市行走笔记</h3>
+          <div class="role">城市探索 · 纪录片</div>
+          <p>走路拍摄派，一天最多走二十公里，只为一碗在巷子深处的小吃。</p>
+          <div class="nums"><div><b>41</b>作品</div><div><b>2.8万</b>关注</div></div>
+          <button class="see" data-maker="城市行走笔记|以步行丈量城市，擅长用长镜头记录街区的气味与人情。|41 部纪录影像·《巷口地图》系列作者">查看档案</button>
+        </article>
+        <article class="maker">
+          <div class="av" style="background:#c0432c">炭</div>
+          <h3>炭火小分队</h3>
+          <div class="role">幕后记录 · 团队</div>
+          <p>三人小组，专拍夜市亮灯前后的准备时间，素材时长常常是成片的十倍。</p>
+          <div class="nums"><div><b>37</b>作品</div><div><b>1.9万</b>关注</div></div>
+          <button class="see" data-maker="炭火小分队|专注夜市幕后与准备时间，坚持同期声与现场收音。|37 部幕后影像·平台年度合作团队">查看档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="section" id="stories">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">NOTES · 故事随笔</span>
+          <h2>影像之外，我们也写字</h2>
+        </div>
+      </div>
+      <div class="story-grid">
+        <article class="story">
+          <h3>一根香肠的十六次失败</h3>
+          <p>第一次灌肠，米灌得太满，蒸的时候全爆了。第二次换了棉线，绑得太松，切开就散。第八次终于成型，但咸得下不了口。到第十六次，我才明白老摊主那句“灌七分饱”是什么意思——不是怕爆，是给糯米留出呼吸的余地。</p>
+          <p>后来我把这个细节写进了脚本。影像里那双手的动作看起来轻描淡写，其实背后有十六次不太好看的现场。</p>
+          <span class="sign">—— 米姐研究室 · 2024 年春</span>
+        </article>
+        <article class="story">
+          <h3>凌晨四点的备料间</h3>
+          <p>拍摄那天我们三点半到，棚里的灯已经亮着。阿源伯把猪后腿肉摊在案板上，刀背拍了两下，说今天的肉不错。他的判断标准很朴素：摸起来要有弹性，颜色不能发白。这句话后来成了那一集的片头字幕。</p>
+          <p>很多时候，我们以为记录的是食物，其实记录的是一个人在凌晨四点仍然清醒、仍然认真的样子。</p>
+          <span class="sign">—— 城市行走笔记 · 拍摄手记</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="section" id="wall">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">GALLERY · 影像墙</span>
+          <h2>社区投稿精选</h2>
+        </div>
+        <p>来自创作者与用户的日常记录，经授权后在官网展示。每一张都在说：今天的这一口，值得留下。</p>
+      </div>
+      <div class="wall">
+        <figure class="w-big">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 420'%3E%3Crect width='500' height='420' fill='%23f2cf9a'/%3E%3Ccircle cx='250' cy='190' r='110' fill='%23c97b3c'/%3E%3Ccircle cx='250' cy='190' r='78' fill='%23a8542a'/%3E%3Ccircle cx='250' cy='190' r='40' fill='%23e8b95f'/%3E%3Crect x='80' y='340' width='340' height='16' rx='8' fill='%236b5a45' opacity='0.5'/%3E%3C/svg%3E" alt="作品墙大图：刚出炉的香肠横切面与糯米颗粒特写">
+          <figcaption>@阿源伯的灶脚 · 今日切片</figcaption>
+        </figure>
+        <figure class="w-mid">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='%23e9f0e2'/%3E%3Crect x='50' y='110' width='300' height='18' rx='9' fill='%235f7a4a'/%3E%3Ccircle cx='120' cy='80' r='26' fill='%23e8892b'/%3E%3Ccircle cx='280' cy='80' r='26' fill='%23c0432c'/%3E%3C/svg%3E" alt="作品墙中图：家庭厨房桌面的灌肠工具与棉线">
+          <figcaption>@手作厨房日记 · 工具清单</figcaption>
+        </figure>
+        <figure class="w-sm">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 220'%3E%3Crect width='240' height='220' fill='%23c0432c'/%3E%3Ccircle cx='120' cy='100' r='46' fill='%23f9c46b'/%3E%3Crect x='60' y='166' width='120' height='12' rx='6' fill='%23fff3dd' opacity='0.7'/%3E%3C/svg%3E" alt="作品墙小图：酱料碟与蒜泥的俯拍画面">
+          <figcaption>@酱料研究所</figcaption>
+        </figure>
+        <figure class="w-tall">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 420'%3E%3Crect width='220' height='420' fill='%232f2418'/%3E%3Ccircle cx='110' cy='150' r='52' fill='none' stroke='%23e8892b' stroke-width='9'/%3E%3Ccircle cx='110' cy='150' r='20' fill='%23e8892b'/%3E%3Ctext x='110' y='330' text-anchor='middle' fill='%23f9c46b' font-size='20' font-family='sans-serif'%3E%E7%82%AD%E7%81%AB%3C/text%3E%3C/svg%3E" alt="作品墙竖图：夜间炭炉火光与铁网的竖幅记录">
+          <figcaption>@炭火小分队</figcaption>
+        </figure>
+        <figure class="w-sm">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 220'%3E%3Crect width='240' height='220' fill='%23c9d7e8'/%3E%3Crect x='60' y='120' width='120' height='70' fill='%23b96a3a'/%3E%3Crect x='90' y='90' width='60' height='30' fill='%23fdf6ea'/%3E%3C/svg%3E" alt="作品墙小图：街边摊位招牌与暖黄灯光">
+          <figcaption>@城市行走笔记</figcaption>
+        </figure>
+        <figure class="w-sm">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 220'%3E%3Crect width='240' height='220' fill='%23f3e0bd'/%3E%3Ccircle cx='90' cy='90' r='34' fill='%23e8892b'/%3E%3Ccircle cx='160' cy='130' r='34' fill='%23a8542a'/%3E%3C/svg%3E" alt="作品墙小图：糯米肠蒸锅开盖的热气瞬间">
+          <figcaption>@米姐研究室</figcaption>
+        </figure>
+        <figure class="w-mid">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='%23fdf6ea'/%3E%3Cpath d='M40 170 L150 60 L260 170 Z' fill='%23e8892b' opacity='0.7'/%3E%3Cpath d='M200 170 L300 80 L380 170 Z' fill='%235f7a4a' opacity='0.6'/%3E%3C/svg%3E" alt="作品墙中图：街区手绘地图与摊位标记">
+          <figcaption>@巷口地图计划</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">VOICES · 用户评价</span>
+          <h2>来自社区的真实反馈</h2>
+        </div>
+        <p>这些评价来自官网与社区后台，我们保留原始语气，不做修饰。</p>
+      </div>
+      <div class="comments">
+        <article class="comment">
+          <div class="top"><span class="avatar-sm" style="background:#c96b12">林</span><b>林小满</b><span>· 3 天前</span></div>
+          <p>本来只是搜个配方，结果一口气看完了《夜市三十摊》。最打动我的是备料那一段，没有背景音乐，只有刀和案板的声音，很实在。</p>
+          <div class="stars">★★★★★</div>
+        </article>
+        <article class="comment">
+          <div class="top"><span class="avatar-sm" style="background:#5f7a4a">陈</span><b>陈先生</b><span>· 5 天前</span></div>
+          <p>作为餐饮从业者，我比较在意专业度。这里的教程给的是克数和温度区间，不是“适量”“少许”，这点很难得。</p>
+          <div class="stars">★★★★★</div>
+        </article>
+        <article class="comment">
+          <div class="top"><span class="avatar-sm" style="background:#566b8c">周</span><b>周周</b><span>· 1 周前</span></div>
+          <p>画面确实高清，肠衣起泡的细节都拍到了。唯一想提的是希望多一些平价工具的推荐，学生党负担得起那种。</p>
+          <div class="stars">★★★★☆</div>
+        </article>
+        <article class="comment">
+          <div class="top"><span class="avatar-sm" style="background:#c0432c">阿</span><b>阿吉</b><span>· 1 周前</span></div>
+          <p>投稿过一次，编辑回信很认真，还帮我改了两处字幕错误。后来视频上了首页，朋友截图发我，还挺开心的。</p>
+          <div class="stars">★★★★★</div>
+        </article>
+        <article class="comment">
+          <div class="top"><span class="avatar-sm" style="background:#8a765e">苏</span><b>苏打水</b><span>· 2 周前</span></div>
+          <p>我是外地人，看完巷口地图那期专门改了行程。跟着走了一遍，确实找到两家本地人排队的小摊，体验很真实。</p>
+          <div class="stars">★★★★★</div>
+        </article>
+        <article class="comment">
+          <div class="top"><span class="avatar-sm" style="background:#e8892b">老</span><b>老纪</b><span>· 2 周前</span></div>
+          <p>APP 端播放有点卡的时候回到官网反而顺畅，字幕也清楚。希望专题能再快一点更新，等着看手艺人口述史的新一集。</p>
+          <div class="stars">★★★★☆</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作灵感 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="tools">
+        <div>
+          <span class="eyebrow">INSPIRATION · 创作灵感</span>
+          <h2>想拍自己的第一支小吃影像？</h2>
+          <p>我们把社区里被收藏最多的选题方法整理成了四个小工具，不讲究设备，先把故事讲清楚。所有工具在官网免费开放，注册创作者后可以下载模板。</p>
+          <div class="tool-cta">
+            <button class="btn btn-primary" data-modal="submitModal">投稿 / 报名挑战</button>
+            <a class="btn btn-ghost" href="#faq">查看投稿说明</a>
+          </div>
+        </div>
+        <div class="tool-list">
+          <div class="tool"><b>脚本灵感</b><span>三段式结构：备料—火候—递手</span></div>
+          <div class="tool"><b>标题建议</b><span>具体数字＋工序词，避免夸张</span></div>
+          <div class="tool"><b>剪辑思路</b><span>保留同期声，减少背景音乐</span></div>
+          <div class="tool"><b>拍摄清单</b><span>俯拍、微距、手部特写各三条</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="section" id="news">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">NEWS · 企业动态</span>
+          <h2>官方发布与更新日志</h2>
+        </div>
+        <p>品牌的重要节点、内容排期与社区规则调整，都会在这里第一时间同步。</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <time>2024 年 4 月</time>
+          <h3>「肠衣与火候」春季创作挑战正式报名</h3>
+          <p>面向所有创作者开放，主题限定为家庭厨房或街边摊位的火候记录。评审由编辑部与三位入驻摊主共同担任，优秀作品将在官网首页推荐位展示并纳入年度合辑。</p>
+        </div>
+        <div class="tl-item">
+          <time>2024 年 3 月</time>
+          <h3>《夜市三十摊》第二季上线，更新至第十二集</h3>
+          <p>本季新增同期声版本与手语字幕，全部内容支持高清播放。制作团队在三个城市同步拍摄，累计素材超过 400 小时。</p>
+        </div>
+        <div class="tl-item">
+          <time>2024 年 2 月</time>
+          <h3>官网社区规则更新：加强创作者署名保护</h3>
+          <p>所有转载与合作内容需在显著位置标注原创作者与授权状态，平台提供统一授权模板供下载。我们希望内容生态的每一步都更清晰。</p>
+        </div>
+        <div class="tl-item">
+          <time>2024 年 1 月</time>
+          <h3>与本地食材市集达成年度合作</h3>
+          <p>双方将在食材溯源、摊主访谈与线下放映三个方向展开合作，首场社区放映已顺利结束，共到场 120 位观众。</p>
+        </div>
+      </div>
+
+      <div style="margin-top:44px">
+        <h3 style="margin-bottom:14px;color:var(--ink-soft);font-weight:600">合作品牌与伙伴</h3>
+        <div class="brands">
+          <span class="brand-chip">巷口食材市集</span>
+          <span class="brand-chip">老灶炭业</span>
+          <span class="brand-chip">城市影像馆</span>
+          <span class="brand-chip">手作厨房协会</span>
+          <span class="brand-chip">夜市摊主联合会</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="sec-head" style="justify-content:center;text-align:center">
+        <div>
+          <span class="eyebrow">HELP · 帮助中心</span>
+          <h2>常见问题</h2>
+        </div>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>平台的内容都是原创的吗？</summary>
+          <p>官网展示的视频与图文以原创为主，部分为创作者授权内容，均在页面标注作者与授权状态。我们坚持正版原则，如发现署名异常可通过联系入口反馈，编辑部会在两个工作日内核实。</p>
+        </details>
+        <details>
+          <summary>如何成为入驻创作者？</summary>
+          <p>通过页面中的投稿入口提交作品链接与简介，审核周期通常为五到七个工作日。通过后可以使用平台的素材库、字幕模板与分发协助。我们不设粉丝门槛，更看重记录的真实性与完整度。</p>
+        </details>
+        <details>
+          <summary>投稿的视频会被修改吗？</summary>
+          <p>不会改动画面与观点。编辑只会在字幕错字、时间轴与版权信息上提出建议，修改需经作者确认。若涉及第三方素材，我们会协助完成授权流程。</p>
+        </details>
+        <details>
+          <summary>为什么有些内容只有文字没有视频？</summary>
+          <p>部分访谈与随笔因受访者意愿，仅以文字形式发布。这类内容同样属于官方发布，可放心引用，但请注明来源与作者。</p>
+        </details>
+        <details>
+          <summary>春季创作挑战的评审标准是什么？</summary>
+          <p>四项维度：选题的具体度、火候与工序的呈现完整度、同期声的使用、署名与授权规范。我们不鼓励过度剪辑与夸张文案，真实比华丽更重要。</p>
+        </details>
+        <details>
+          <summary>可以申请线下放映或合作拍摄吗？</summary>
+          <p>可以。请在联系模块留下机构名称、活动时间与大致需求，我们会在三个工作日内回复。社区放映为公益性质，不收取费用。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section" id="contact" style="padding-bottom:60px">
+    <div class="wrap">
+      <div class="sec-head" style="justify-content:center;text-align:center">
+        <div>
+          <span class="eyebrow">CONTACT · 联系我们</span>
+          <h2>一起记录下一口</h2>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contact-card">
+          <div class="ico">✉</div>
+          <h3>内容合作</h3>
+          <p>品牌联名、专题共建、线下放映</p>
+          <button data-modal="submitModal">提交合作需求</button>
+        </div>
+        <div class="contact-card">
+          <div class="ico">▶</div>
+          <h3>创作者投稿</h3>
+          <p>上传作品、报名挑战、申请入驻</p>
+          <button data-modal="submitModal">进入投稿入口</button>
+        </div>
+        <div class="contact-card">
+          <div class="ico">↗</div>
+          <h3>分享与反馈</h3>
+          <p>把官网分享给同好，或告诉我们问题</p>
+          <button data-modal="shareModal">分享官网</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo">
+          <span class="mark">肠</span>
+          <span>人生无常大肠包小肠<small>OFFICIAL SITE</small></span>
+        </div>
+        <p>以台湾小吃为主题的原创影像品牌，深耕垂直领域九年，为企业与创作者搭建值得信赖的内容生态。官网持续运营中，所有内容均为正版授权或原创发布。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#focus">焦点影像</a></li>
+          <li><a href="#flow">视频流</a></li>
+          <li><a href="#topic">专题企划</a></li>
+          <li><a href="#makers">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>品牌信息</h4>
+        <ul>
+          <li><a href="#news">企业动态</a></li>
+          <li><a href="#stories">品牌故事</a></li>
+          <li><a href="#faq">帮助中心</a></li>
+          <li><a href="#contact">联系与投稿</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <p>内容合作：brand@dachangbaoxiaochang.example</p>
+        <p>投稿咨询：creator@dachangbaoxiaochang.example</p>
+        <p>工作时间：周一至周五 10:00 - 18:00</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>人生无常大肠包小肠 官方网站 | 版权所有 | 持续运营中</span>
+      <span>备案号占位：某ICP备00000000号 · 内容均为原创或授权发布</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+<div id="toast">已复制</div>
+
+<!-- 分享弹窗 -->
+<div class="modal-mask" id="shareModal">
+  <div class="modal">
+    <button class="close" data-close>×</button>
+    <h3>分享这份记录</h3>
+    <p>把官网链接发给同样爱吃、也爱拍的朋友。</p>
+    <div class="share-row">
+      <button data-share="微信">微信</button>
+      <button data-share="微博">微博</button>
+      <button data-share="QQ">QQ</button>
+    </div>
+    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:10px" id="copyLink">复制页面链接</button>
+  </div>
+</div>
+
+<!-- 投稿弹窗 -->
+<div class="modal-mask" id="submitModal">
+  <div class="modal">
+    <button class="close" data-close>×</button>
+    <h3>投稿与合作入口</h3>
+    <p>留下你的联系方式与一句选题描述，编辑会在三个工作日内回复。</p>
+    <input type="text" id="subName" placeholder="你的昵称或机构名称">
+    <input type="text" id="subContact" placeholder="邮箱或微信">
+    <textarea id="subIdea" rows="3" placeholder="想拍什么？比如：我家楼下烤了二十五年的香肠摊"></textarea>
+    <button class="btn btn-primary" style="width:100%;justify-content:center" id="submitForm">提交</button>
+  </div>
+</div>
+
+<!-- 创作者档案弹窗 -->
+<div class="modal-mask" id="makerModal">
+  <div class="modal">
+    <button class="close" data-close>×</button>
+    <h3 id="makerName">创作者档案</h3>
+    <p id="makerDesc">—</p>
+    <p style="color:var(--amber-deep);font-size:.82rem" id="makerStat">—</p>
+    <button class="btn btn-ghost" style="width:100%;justify-content:center" data-close>关闭</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var toast=document.getElementById('toast');
+  var toastTimer=null;
+  function showToast(msg){
+    toast.textContent=msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer=setTimeout(function(){toast.classList.remove('show');},2000);
+  }
+
+  // 移动端导航
+  var toggle=document.getElementById('menuToggle');
+  var nav=document.getElementById('mainNav');
+  toggle.addEventListener('click',function(){
+    nav.classList.toggle('open');
+    toggle.textContent=nav.classList.contains('open')?'✕':'☰';
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      nav.classList.remove('open');
+      toggle.textContent='☰';
+    });
+  });
+
+  // 搜索
+  var searchInput=document.getElementById('searchInput');
+  var searchBtn=document.getElementById('searchBtn');
+  function doSearch(){
+    var q=searchInput.value.trim();
+    if(!q){showToast('请输入关键词，例如：糯米肠、炭烤、夜市');return;}
+    var count=0;
+    document.querySelectorAll('#videoFlow .card').forEach(function(card){
+      var txt=card.textContent;
+      if(txt.indexOf(q)>-1){
+        card.style.display='';
+        count++;
+      }else{
+        card.style.display='none';
+      }
+    });
+    if(count>0){
+      showToast('找到 '+count+' 条与「'+q+'」相关的内容');
+      document.getElementById('flow').scrollIntoView({behavior:'smooth'});
+    }else{
+      document.querySelectorAll('#videoFlow .card').forEach(function(c){c.style.display='';});
+      showToast('暂未找到「'+q+'」，已为你展示全部内容');
+    }
+  }
+  searchBtn.addEventListener('click',doSearch);
+  searchInput.addEventListener('keydown',function(e){if(e.key==='Enter'){doSearch();}});
+
+  // 标签筛选
+  document.querySelectorAll('#filterTags button').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('#filterTags button').forEach(function(b){b.classList.remove('on');b.style.background='';b.style.color='';});
+      btn.classList.add('on');
+      var f=btn.getAttribute('data-filter');
+      document.querySelectorAll('#videoFlow .card').forEach(function(card){
+        if(f==='all'||card.getAttribute('data-tag')===f){
+          card.style.display='';
+        }else{
+          card.style.display='none';
+        }
+      });
+    });
+  });
+
+  // 点赞 / 收藏
+  document.querySelectorAll('.like-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var num=btn.querySelector('.num');
+      var n=parseInt(num.textContent.replace(/[^\d]/g,''),10);
+      if(btn.classList.contains('on')){
+        btn.classList.remove('on');
+        num.textContent=n-1;
+      }else{
+        btn.classList.add('on');
+        num.textContent=n+1;
+        showToast('已点赞，感谢你的支持');
+      }
+    });
+  });
+  document.querySelectorAll('.fav-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var ico=btn.querySelector('.ico');
+      if(btn.classList.contains('on')){
+        btn.classList.remove('on');
+        ico.textContent='♡';
+        showToast('已取消收藏');
+      }else{
+        btn.classList.add('on');
+        ico.textContent='♥';
+        showToast('已加入收藏，可在个人中心查看');
+      }
+    });
+  });
+
+  // 弹窗通用
+  function openModal(id){document.getElementById(id).classList.add('show');}
+  function closeAll(){document.querySelectorAll('.modal-mask').forEach(function(m){m.classList.remove('show');});}
+  document.querySelectorAll('[data-modal]').forEach(function(btn){
+    btn.addEventListener('click',function(){openModal(btn.getAttribute('data-modal'));});
+  });
+  document.querySelectorAll('[data-close]').forEach(function(btn){
+    btn.addEventListener('click',closeAll);
+  });
+  document.querySelectorAll('.modal-mask').forEach(function(mask){
+    mask.addEventListener('click',function(e){
+      if(e.target===mask){closeAll();}
+    });
+  });
+
+  // 分享
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      showToast('已生成'+btn.getAttribute('data-share')+'分享内容');
+    });
+  });
+  document.getElementById('copyLink').addEventListener('click',function(){
+    var url=location.href;
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){showToast('链接已复制');}).catch(function(){showToast('复制失败，请手动复制');});
+    }else{
+      var ta=document.createElement('textarea');
+      ta.value=url;
+      document.body.appendChild(ta);
+      ta.select();
+      try{document.execCommand('copy');showToast('链接已复制');}catch(e){showToast('复制失败，请手动复制');}
+      document.body.removeChild(ta);
+    }
+  });
+
+  // 投稿表单
+  document.getElementById('submitForm').addEventListener('click',function(){
+    var name=document.getElementById('subName').value.trim();
+    var contact=document.getElementById('subContact').value.trim();
+    if(!name||!contact){showToast('请填写昵称与联系方式');return;}
+    closeAll();
+    document.getElementById('subName').value='';
+    document.getElementById('subContact').value='';
+    document.getElementById('subIdea').value='';
+    showToast('提交成功，编辑将尽快与你联系');
+  });
+
+  // 创作者档案
+  document.querySelectorAll('[data-maker]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var parts=btn.getAttribute('data-maker').split('|');
+      document.getElementById('makerName').textContent=parts[0];
+      document.getElementById('makerDesc').textContent=parts[1]||'';
+      document.getElementById('makerStat').textContent=parts[2]||'';
+      openModal('makerModal');
+    });
+  });
+
+  // 回到顶部
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>420){toTop.classList.add('show');}else{toTop.classList.remove('show');}
+  });
+  toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+</body>
+  </html>
